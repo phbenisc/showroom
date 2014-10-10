@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="585.0">
+         <children>
+            <TitledPane animated="false" text="General">
+               <content>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label text="Number of Start Elements:" HBox.hgrow="ALWAYS" />
+                              <Slider fx:id="startEleSlider" blockIncrement="100.0" max="10000.0" min="100.0" value="1000.0" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="startEleField" prefWidth="100.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="StepSize:" HBox.hgrow="ALWAYS" />
+                              <Slider fx:id="stepSizeSlider" blockIncrement="100.0" max="10000.0" min="100.0" value="1000.0" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="stepSizeField" prefWidth="100.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Number of Steps:" HBox.hgrow="ALWAYS" />
+                              <Slider fx:id="nrOfStepsSlider" max="500.0" min="10.0" value="25.0" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="nrOfStepsField" prefWidth="100.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Repetitions:" HBox.hgrow="ALWAYS" />
+                              <Slider fx:id="repSlider" min="1.0" value="10.0" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="repField" prefWidth="100.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Problem Generator">
+               <content>
+                  <VBox>
+                     <children>
+                        <ChoiceBox fx:id="generatorChoiceBox" prefWidth="200.0" />
+                        <AnchorPane fx:id="generatorPane" />
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Algorithms">
+               <content>
+                  <FlowPane fx:id="algorithmsFlow" />
+               </content>
+            </TitledPane>
+            <HBox>
+               <children>
+                  <Region prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#loadResultPage" text="Compute" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
