@@ -2,4 +2,4 @@ language: java
 jdk:
 - oraclejdk8
 
-script: cd showroom && mvn test
+script: cd sortingMeasure && mvn test
