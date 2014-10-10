@@ -3,14 +3,7 @@ package de.htwg_konstaz.ui.result;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.Set;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import de.htwg_konstaz.ui.configuration.ConfigurationModel;
-import de.htwg_konstaz.ui.main.IController;
-import uk.napierdevsoc.sortingAlgorithms.SortingManager;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -25,6 +18,12 @@ import javafx.scene.control.ProgressIndicator;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import de.htwg_konstaz.ui.configuration.ConfigurationModel;
+import de.htwg_konstaz.ui.main.IController;
 
 public class ResultController implements IController {
 	private final static Logger LOGGER = LoggerFactory.getLogger(ResultController.class);

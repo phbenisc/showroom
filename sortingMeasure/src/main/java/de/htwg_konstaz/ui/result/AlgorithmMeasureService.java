@@ -1,11 +1,8 @@
 package de.htwg_konstaz.ui.result;
 
-import de.htwg_konstaz.ui.configuration.ConfigurationModel;
-import javafx.beans.property.ObjectProperty;
-import javafx.collections.ObservableList;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
-import javafx.scene.chart.XYChart;
+import de.htwg_konstaz.ui.configuration.ConfigurationModel;
 
 public class AlgorithmMeasureService extends Service<Result> {
 	ConfigurationModel model;

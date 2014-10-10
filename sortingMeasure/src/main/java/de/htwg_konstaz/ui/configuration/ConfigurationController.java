@@ -6,22 +6,10 @@ package de.htwg_konstaz.ui.configuration;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import uk.napierdevsoc.problemGenerators.OrderedProblemGenerator;
-import uk.napierdevsoc.problemGenerators.OrderedProblemGenerator.Order;
-import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
-import uk.napierdevsoc.sortingAlgorithms.SortingManager;
-import de.htwg_konstaz.ui.main.IController;
-import de.htwg_konstaz.ui.main.MainWindowController;
-import de.htwg_konstaz.ui.result.Result;
-import de.htwg_konstaz.ui.result.ResultController;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -39,6 +27,13 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
 import javafx.util.StringConverter;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import uk.napierdevsoc.sortingAlgorithms.SortingManager;
+import de.htwg_konstaz.ui.main.IController;
+import de.htwg_konstaz.ui.result.ResultController;
 
 public class ConfigurationController implements IController {
 
@@ -137,7 +132,6 @@ public class ConfigurationController implements IController {
 		}
 	};
 
-	private MainWindowController mainController;
 	private IProblemGeneratorConfig actualProblemGeneratorConfigValue;
 	private List<IProblemGeneratorConfig> generatorConfigs = new ArrayList<IProblemGeneratorConfig>();
 

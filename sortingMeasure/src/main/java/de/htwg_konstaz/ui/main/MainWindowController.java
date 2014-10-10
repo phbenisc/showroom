@@ -17,7 +17,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import de.htwg_konstaz.ui.configuration.ConfigurationController;
-import de.htwg_konstaz.ui.result.ResultController;
 
 public class MainWindowController implements IController{
 	

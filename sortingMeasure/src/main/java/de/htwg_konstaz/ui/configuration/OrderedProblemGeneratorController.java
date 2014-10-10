@@ -2,20 +2,18 @@ package de.htwg_konstaz.ui.configuration;
 
 import java.io.IOException;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import uk.napierdevsoc.problemGenerators.OrderedProblemGenerator;
-import uk.napierdevsoc.problemGenerators.OrderedProblemGenerator.Order;
-import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
-import javafx.beans.property.ObjectProperty;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.HBox;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import uk.napierdevsoc.problemGenerators.OrderedProblemGenerator;
+import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 
 public class OrderedProblemGeneratorController implements IProblemGeneratorConfig{
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrderedProblemGeneratorController.class);

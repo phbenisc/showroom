@@ -2,21 +2,20 @@ package de.htwg_konstaz.ui.result;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.LongStream;
 
-import de.htwg_konstaz.ui.configuration.ConfigurationModel;
+import javafx.concurrent.Task;
+import javafx.scene.chart.XYChart.Data;
 import uk.napierdevsoc.sort.interfaces.ISortAlgorithm;
 import uk.napierdevsoc.sort.interfaces.ISortData;
 import uk.napierdevsoc.sortingAlgorithms.IAlgorithmDataCallback;
 import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 import uk.napierdevsoc.sortingAlgorithms.SortProfile;
 import uk.napierdevsoc.sortingAlgorithms.SortingManager;
-import javafx.concurrent.Task;
-import javafx.scene.chart.XYChart.Data;
+import de.htwg_konstaz.ui.configuration.ConfigurationModel;
 
 public class AlgorithmMeasureTask extends Task<Result> {
 
@@ -87,8 +86,7 @@ public class AlgorithmMeasureTask extends Task<Result> {
 			list2.add(getLongValues.getValue(object));
 		}
 		double result = list2.stream().flatMapToLong(n -> LongStream.of(n)).average().orElse(0.0);
-		
-		// return (long) result;
+
 		return new Data<Number, Number>(problemSize, (long) result);
 	}
 
