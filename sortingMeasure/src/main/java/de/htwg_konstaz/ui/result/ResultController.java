@@ -84,11 +84,6 @@ public class ResultController implements IController {
 	@FXML
 	// This method is called by the FXMLLoader when initialisation is complete
 	void initialize() {
-		assert this.comparisionChart != null : "fx:id=\"comparisionChart\" was not injected: check your FXML file 'Result.fxml'.";
-		assert this.shiftChart != null : "fx:id=\"shiftChart\" was not injected: check your FXML file 'Result.fxml'.";
-		assert this.computionTimeChart != null : "fx:id=\"computionTimeChart\" was not injected: check your FXML file 'Result.fxml'.";
-		assert this.progressIndicator  != null : "progresIndicator was not injected";
-		LOGGER.error("progressIndicator={} service={}",progressIndicator, service);
 		progressIndicator.progressProperty().bind(service.progressProperty());
 		region.visibleProperty().bind(service.runningProperty());
 		progressIndicator.visibleProperty().bind(service.runningProperty());
