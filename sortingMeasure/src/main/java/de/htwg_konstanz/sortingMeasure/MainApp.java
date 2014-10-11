@@ -28,6 +28,7 @@ public class MainApp extends Application {
         Scene scene = new Scene(rootNode);
         stage.setTitle("JavaFX MeasureAlgorithms");
         stage.setScene(scene);
+        stage.setMaximized(true);
         stage.show();
     }
 }
