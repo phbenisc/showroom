@@ -2,6 +2,7 @@ package de.htwg_konstanz.ui.configuration;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.util.Random;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,8 @@ import org.uncommons.maths.random.MersenneTwisterRNG;
 import org.uncommons.maths.random.RepeatableRNG;
 import org.uncommons.maths.random.XORShiftRNG;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -44,13 +47,16 @@ public class RandomProblemGeneratorController implements IProblemGeneratorConfig
     private VBox root;
 	
     @FXML
-    private ChoiceBox<NumberGenerator<Double>> distChoiceBox;
+    private ChoiceBox<String> distChoiceBox;
 
     @FXML
-    private ChoiceBox<RepeatableRNG> rngChoiceBox;
+    private ChoiceBox<String> rngChoiceBox;
 
     @FXML
     private VBox distAddOpt;
+    
+    private RNGManager rngManager = new RNGManager();
+    private DistributionManager distriManager = new DistributionManager();
 
 	@Override
 	public Node getContentNode() {
@@ -60,36 +66,36 @@ public class RandomProblemGeneratorController implements IProblemGeneratorConfig
 
 	@Override
 	public IProblemGenerator getProblemGenerator() {
-		return new RandomProblemGenerator(distChoiceBox.getValue());
+		Random rng = rngManager.getRNG(rngChoiceBox.getValue());
+		IDistributionConfiguration distri = distriManager.getDistri(distChoiceBox.getValue());
+		NumberGenerator<Double> problemGenerator = distri.getProblemGenerator(rng);
+		return new RandomProblemGenerator(problemGenerator);
 	}
 	
     @FXML
     void initialize() {
     	logger.debug("connect fxml and Controller");
-    	ObservableList<RepeatableRNG> rngList = FXCollections.observableArrayList();
-    	logger.debug("1");
-    	MersenneTwisterRNG mersenneTwisterRNG = new MersenneTwisterRNG();
-    	logger.debug("11");
-		JavaRNG javaRNG = new JavaRNG();
-		logger.debug("12");
-		CellularAutomatonRNG cellularAutomatonRNG = new  CellularAutomatonRNG();
-		logger.debug("13");
-//		CMWC4096RNG cmwc4096rng = new CMWC4096RNG();
-		logger.debug("14");
-		XORShiftRNG xorShiftRNG = new XORShiftRNG();
-		logger.debug("15");
-		rngList.addAll(mersenneTwisterRNG,javaRNG, cellularAutomatonRNG, /*cmwc4096rng,*/ xorShiftRNG);
-    	logger.debug("2");
-    	try {
-			rngList.add(new AESCounterRNG());
-		} catch (GeneralSecurityException e) {
-			logger.debug("Not able to use AESCounterRNG", e);
-		}
-    	logger.debug("3");
+    	ObservableList<String> rngList = FXCollections.observableArrayList(rngManager.getAllRngNames());
     	rngChoiceBox.itemsProperty().set(rngList);
-    	logger.debug("4");
-    	distChoiceBox.itemsProperty().get().add(new ContinuousUniformGenerator(0, 1, mersenneTwisterRNG));
-    	logger.debug("connection complete");
+    	
+    	distChoiceBox.valueProperty().addListener(distriListener);
+    	
+    	ObservableList<String> distriList = FXCollections.observableArrayList(distriManager.getAllDistiNames());
+    	distChoiceBox.itemsProperty().set(distriList);
+    	logger.debug("connection complete");   	
+    	
+		
     }
 
+    private ChangeListener<String> distriListener = new ChangeListener<String>() {
+    	
+    	@Override
+    	public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+    		IDistributionConfiguration distri = distriManager.getDistri(newValue);
+    		
+    		ObservableList<Node> children = distAddOpt.getChildren();
+    		children.clear();
+    		children.add(distri.getContentNode());				
+    	}
+    };
 }
