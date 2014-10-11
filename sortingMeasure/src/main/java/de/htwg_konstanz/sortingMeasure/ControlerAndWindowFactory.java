@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory;
 
 import de.htwg_konstanz.ui.configuration.ConfigurationController;
 import de.htwg_konstanz.ui.configuration.ConfigurationModel;
+import de.htwg_konstanz.ui.configuration.IProblemGeneratorConfig;
 import de.htwg_konstanz.ui.configuration.OrderedProblemGeneratorController;
+import de.htwg_konstanz.ui.configuration.RandomProblemGeneratorController;
 import de.htwg_konstanz.ui.main.IMainWindowController;
 import de.htwg_konstanz.ui.result.ResultController;
 
@@ -32,6 +34,7 @@ public class ControlerAndWindowFactory {
 		props.setProperty("configurationWindow", "/fxml/Configuration.fxml");
 		props.setProperty("resultWindow", "/fxml/Result.fxml");
 		props.setProperty("orderedProblemGenWindow", "/fxml/OrderedProblemGenerator.fxml");
+		props.setProperty("randomProblemGenWindow", "/fxml/RandomProblemGenerator.fxml");
 		
 //		try(InputStream in = Thread.currentThread().getContextClassLoader().getResourceAsStream("/fxml.properties")) {
 //			props.load(in);
@@ -64,6 +67,11 @@ public class ControlerAndWindowFactory {
 	
 	public ConfigurationController getNewConfigurationController(Tab tab) {
 		return new ConfigurationController(props.getProperty("configurationWindow"),tab);
+	}
+
+
+	public IProblemGeneratorConfig getNewRandomProblemGeneratorController() {
+		return new RandomProblemGeneratorController(props.getProperty("randomProblemGenWindow"));
 	}
 	
 	

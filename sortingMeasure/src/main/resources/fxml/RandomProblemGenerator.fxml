@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <Label text="RNG:" />
+            <Pane HBox.hgrow="SOMETIMES" />
+            <ChoiceBox fx:id="rngChoiceBox" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label text="Distribution:" />
+            <ChoiceBox fx:id="distChoiceBox" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <VBox fx:id="distAddOpt" />
+   </children>
+</VBox>

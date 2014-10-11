@@ -44,15 +44,13 @@ public class ConfigurationController implements IController {
 
 	protected static final Logger LOGGER = LoggerFactory.getLogger(ConfigurationController.class);
 
-
-
 	/**
 	 * @param fxmlName
 	 *            the name of the file, e.g. MainWindow.fxml
 	 * @throws IOException
 	 *             when the file is loadable
 	 */
-	public ConfigurationController(String fxmlName,Tab tab){
+	public ConfigurationController(String fxmlName, Tab tab) {
 		this.tab = tab;
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlName));
 		fxmlLoader.setController(this);
@@ -62,7 +60,6 @@ public class ConfigurationController implements IController {
 			LOGGER.error("Error while loading MainWindow", e);
 		}
 
-		
 	}
 
 	@FXML
@@ -110,7 +107,7 @@ public class ConfigurationController implements IController {
 	private StringConverter<Number> converter = new StringConverter<Number>() {
 		@Override
 		public String toString(Number object) {
-			return object.intValue()+"";
+			return object.intValue() + "";
 		}
 
 		@Override
@@ -126,11 +123,11 @@ public class ConfigurationController implements IController {
 			ObservableList<Node> children = generatorPane.getChildren();
 			children.clear();
 			children.add(newValue.getContentNode());
-			actualProblemGeneratorConfigValue = newValue;
+			// actualProblemGeneratorConfigValue = newValue;
 		}
 	};
 
-	private IProblemGeneratorConfig actualProblemGeneratorConfigValue;
+	// private IProblemGeneratorConfig actualProblemGeneratorConfigValue;
 	private List<IProblemGeneratorConfig> generatorConfigs = new ArrayList<IProblemGeneratorConfig>();
 
 	@FXML
@@ -141,14 +138,17 @@ public class ConfigurationController implements IController {
 		startEleField.textProperty().bindBidirectional(startEleSlider.valueProperty(), converter);
 		stepSizeField.textProperty().bindBidirectional(stepSizeSlider.valueProperty(), converter);
 		nrOfStepsField.textProperty().bindBidirectional(nrOfStepsSlider.valueProperty(), converter);
-		
+
 		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController());
+		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewRandomProblemGeneratorController());
 
 		ObservableList<IProblemGeneratorConfig> observableArrayList = FXCollections.observableArrayList(generatorConfigs);
 		LOGGER.debug("choiceBox items to display: {}", observableArrayList);
 		generatorChoiceBox.itemsProperty().set(observableArrayList);
 		generatorChoiceBox.valueProperty().addListener(generatorListener);
-		generatorChoiceBox.valueProperty().set(observableArrayList.stream().findFirst().orElse(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController()));
+		generatorChoiceBox.valueProperty().set(
+				observableArrayList.stream().findFirst()
+						.orElse(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController()));
 
 		for (String algo : manager.getAlgorithms()) {
 			CheckBox checkbox = new CheckBox(algo);
@@ -164,19 +164,18 @@ public class ConfigurationController implements IController {
 		for (Node node : algorithmsFlow.getChildren()) {
 			if (node instanceof CheckBox) {
 				CheckBox checkBox = (CheckBox) node;
-
-				algos.add(checkBox.getText());
+				if (checkBox.isSelected())
+					algos.add(checkBox.getText());
 			}
 		}
 
-		ConfigurationModel configurationModel = new ConfigurationModel(algos, 
-				actualProblemGeneratorConfigValue.getProblemGenerator(),
-				startEleSlider.valueProperty().intValue(), stepSizeSlider.valueProperty().intValue(), 
-				nrOfStepsSlider.valueProperty().intValue(), repSlider.valueProperty().intValue());
+		ConfigurationModel configurationModel = new ConfigurationModel(algos,
+		// actualProblemGeneratorConfigValue.getProblemGenerator(),
+				generatorChoiceBox.getValue().getProblemGenerator(), startEleSlider.valueProperty().intValue(), stepSizeSlider
+						.valueProperty().intValue(), nrOfStepsSlider.valueProperty().intValue(), repSlider.valueProperty().intValue());
 		ResultController rController = ControlerAndWindowFactory.getInstance().getNewResultController(configurationModel);
 		tab.setContent(rController.getContentNode());
-		
-		
+
 	}
 
 	@Override
