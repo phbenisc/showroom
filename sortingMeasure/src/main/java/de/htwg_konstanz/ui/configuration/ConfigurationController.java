@@ -110,7 +110,7 @@ public class ConfigurationController implements IController {
 	private StringConverter<Number> converter = new StringConverter<Number>() {
 		@Override
 		public String toString(Number object) {
-			return object.toString();
+			return object.intValue()+"";
 		}
 
 		@Override
