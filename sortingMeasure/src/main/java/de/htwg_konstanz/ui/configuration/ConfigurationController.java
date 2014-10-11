@@ -44,9 +44,7 @@ public class ConfigurationController implements IController {
 
 	protected static final Logger LOGGER = LoggerFactory.getLogger(ConfigurationController.class);
 
-	public ConfigurationController(Tab tab){
-		this("/fxml/Configuration.fxml", tab);
-	}
+
 
 	/**
 	 * @param fxmlName
