@@ -1,4 +1,4 @@
-package de.htwg_konstaz.ui.configuration;
+package de.htwg_konstanz.ui.configuration;
 
 import java.io.IOException;
 
@@ -18,8 +18,9 @@ import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 public class OrderedProblemGeneratorController implements IProblemGeneratorConfig{
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrderedProblemGeneratorController.class);
 	
-	public OrderedProblemGeneratorController() {
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/OrderedProblemGenerator.fxml"));
+	public OrderedProblemGeneratorController(String name) {
+		LOGGER.debug("Construct OrderedProblemGeneratorController(fileName={})",name);
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(name));
 		fxmlLoader.setController(this);
 		try {
 			fxmlLoader.load();

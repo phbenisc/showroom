@@ -1,4 +1,4 @@
-package de.htwg_konstaz.ui.main;
+package de.htwg_konstanz.ui.main;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,7 +16,7 @@ import javafx.scene.layout.VBox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.htwg_konstaz.ui.configuration.ConfigurationController;
+import de.htwg_konstanz.ui.configuration.ConfigurationController;
 
 public class MainWindowController implements IController{
 	

@@ -5,4 +5,4 @@
  * @author Philip Yannick Benischke
  * 
  */
-package de.htwg_konstaz.ui.main;
+package de.htwg_konstanz.ui.main;

@@ -1,4 +1,4 @@
-package de.htwg_konstaz.ui.result;
+package de.htwg_konstanz.ui.result;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,7 +15,7 @@ import uk.napierdevsoc.sortingAlgorithms.IAlgorithmDataCallback;
 import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 import uk.napierdevsoc.sortingAlgorithms.SortProfile;
 import uk.napierdevsoc.sortingAlgorithms.SortingManager;
-import de.htwg_konstaz.ui.configuration.ConfigurationModel;
+import de.htwg_konstanz.ui.configuration.ConfigurationModel;
 
 public class AlgorithmMeasureTask extends Task<Result> {
 

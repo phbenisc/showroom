@@ -1,4 +1,4 @@
-package de.htwg_konstaz.ui.result;
+package de.htwg_konstanz.ui.result;
 
 import java.util.ArrayList;
 import java.util.List;

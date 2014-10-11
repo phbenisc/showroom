@@ -1,4 +1,4 @@
-package de.htwg_konstaz.ui.configuration;
+package de.htwg_konstanz.ui.configuration;
 
 import java.util.Set;
 

@@ -1,4 +1,4 @@
-package de.htwg_konstaz.sortingMeasure;
+package de.htwg_konstanz.sortingMeasure;
 
 import javafx.application.Application;
 import javafx.scene.Parent;
@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.htwg_konstaz.ui.main.MainWindowController;
+import de.htwg_konstanz.ui.main.MainWindowController;
 
 public class MainApp extends Application {
 

@@ -1,4 +1,4 @@
-package de.htwg_konstaz.ui.result;
+package de.htwg_konstanz.ui.result;
 
 import java.io.IOException;
 import java.net.URL;
@@ -18,8 +18,8 @@ import javafx.scene.layout.StackPane;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.htwg_konstaz.ui.configuration.ConfigurationModel;
-import de.htwg_konstaz.ui.main.IController;
+import de.htwg_konstanz.ui.configuration.ConfigurationModel;
+import de.htwg_konstanz.ui.main.IController;
 
 public class ResultController implements IController {
 	private final static Logger LOGGER = LoggerFactory.getLogger(ResultController.class);

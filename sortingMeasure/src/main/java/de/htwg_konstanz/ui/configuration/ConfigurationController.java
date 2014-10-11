@@ -1,4 +1,4 @@
-package de.htwg_konstaz.ui.configuration;
+package de.htwg_konstanz.ui.configuration;
 
 /**
  * Sample Skeleton for 'Configuration.fxml' Controller Class
@@ -32,8 +32,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import uk.napierdevsoc.sortingAlgorithms.SortingManager;
-import de.htwg_konstaz.ui.main.IController;
-import de.htwg_konstaz.ui.result.ResultController;
+import de.htwg_konstanz.sortingMeasure.ControlerAndWindowFactory;
+import de.htwg_konstanz.ui.main.IController;
+import de.htwg_konstanz.ui.result.ResultController;
 
 public class ConfigurationController implements IController {
 
@@ -43,7 +44,7 @@ public class ConfigurationController implements IController {
 
 	protected static final Logger LOGGER = LoggerFactory.getLogger(ConfigurationController.class);
 
-	public ConfigurationController(Tab tab) throws IOException {
+	public ConfigurationController(Tab tab){
 		this("/fxml/Configuration.fxml", tab);
 	}
 
@@ -53,7 +54,7 @@ public class ConfigurationController implements IController {
 	 * @throws IOException
 	 *             when the file is loadable
 	 */
-	public ConfigurationController(String fxmlName,Tab tab) throws IOException {
+	public ConfigurationController(String fxmlName,Tab tab){
 		this.tab = tab;
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlName));
 		fxmlLoader.setController(this);
@@ -61,10 +62,9 @@ public class ConfigurationController implements IController {
 			fxmlLoader.load();
 		} catch (IOException e) {
 			LOGGER.error("Error while loading MainWindow", e);
-			throw e;
 		}
 
-		generatorConfigs.add(new OrderedProblemGeneratorController());
+		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController());
 	}
 
 	@FXML
@@ -147,7 +147,7 @@ public class ConfigurationController implements IController {
 		ObservableList<IProblemGeneratorConfig> observableArrayList = FXCollections.observableArrayList(generatorConfigs);
 		generatorChoiceBox.itemsProperty().set(observableArrayList);
 		generatorChoiceBox.valueProperty().addListener(generatorListener);
-		generatorChoiceBox.valueProperty().set(observableArrayList.stream().findFirst().orElse(new OrderedProblemGeneratorController()));
+		generatorChoiceBox.valueProperty().set(observableArrayList.stream().findFirst().orElse(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController()));
 
 		for (String algo : manager.getAlgorithms()) {
 			CheckBox checkbox = new CheckBox(algo);
