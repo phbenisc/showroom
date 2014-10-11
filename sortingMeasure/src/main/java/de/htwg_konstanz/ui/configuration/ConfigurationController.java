@@ -62,7 +62,7 @@ public class ConfigurationController implements IController {
 			LOGGER.error("Error while loading MainWindow", e);
 		}
 
-		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController());
+		
 	}
 
 	@FXML
@@ -141,15 +141,19 @@ public class ConfigurationController implements IController {
 		startEleField.textProperty().bindBidirectional(startEleSlider.valueProperty(), converter);
 		stepSizeField.textProperty().bindBidirectional(stepSizeSlider.valueProperty(), converter);
 		nrOfStepsField.textProperty().bindBidirectional(nrOfStepsSlider.valueProperty(), converter);
+		
+		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController());
 
 		ObservableList<IProblemGeneratorConfig> observableArrayList = FXCollections.observableArrayList(generatorConfigs);
+		LOGGER.debug("choiceBox items to display: {}", observableArrayList);
 		generatorChoiceBox.itemsProperty().set(observableArrayList);
 		generatorChoiceBox.valueProperty().addListener(generatorListener);
 		generatorChoiceBox.valueProperty().set(observableArrayList.stream().findFirst().orElse(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController()));
 
 		for (String algo : manager.getAlgorithms()) {
 			CheckBox checkbox = new CheckBox(algo);
-			checkbox.setIndeterminate(true);
+			checkbox.setAllowIndeterminate(false);
+			checkbox.setSelected(true);
 			algorithmsFlow.getChildren().add(checkbox);
 		}
 	}
@@ -157,9 +161,11 @@ public class ConfigurationController implements IController {
 	@FXML
 	void loadResultPage(ActionEvent event) {
 		Set<String> algos = new HashSet<>();
-		for (Node checkBox : algorithmsFlow.getChildren()) {
-			if (checkBox instanceof CheckBox) {
-				algos.add(((CheckBox) checkBox).getText());
+		for (Node node : algorithmsFlow.getChildren()) {
+			if (node instanceof CheckBox) {
+				CheckBox checkBox = (CheckBox) node;
+
+				algos.add(checkBox.getText());
 			}
 		}
 
