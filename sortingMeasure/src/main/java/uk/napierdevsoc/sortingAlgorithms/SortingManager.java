@@ -27,14 +27,14 @@ public class SortingManager {
 	}
 
 	public boolean exceedsMaxArraySize(int numberOfStartElements, int numberOfSteps, int stepSize) {
-//		logger.debug("exceedsIntegerRange(numberOfStartElements={}, numberOfSteps={}, stepSize={}) called", numberOfStartElements,
-//				numberOfSteps, stepSize);
+		logger.debug("exceedsIntegerRange(numberOfStartElements={}, numberOfSteps={}, stepSize={}) called", numberOfStartElements,
+				numberOfSteps);
 
 		double highestNumberOfElements = 0; // double because it is possible that a multiplication beetween int exceeds
 											// Long.MAX_Value
 		highestNumberOfElements = numberOfStartElements + (double) (numberOfSteps * 1.0 * stepSize);
 		boolean result = highestNumberOfElements > Integer.MAX_VALUE;
-//		logger.debug("exceedsIntegerRange return={}", result);
+		logger.debug("exceedsIntegerRange return={}", result);
 		return result;
 	}
 
