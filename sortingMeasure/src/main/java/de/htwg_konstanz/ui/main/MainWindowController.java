@@ -16,6 +16,7 @@ import javafx.scene.layout.VBox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.htwg_konstanz.sortingMeasure.ControlerAndWindowFactory;
 import de.htwg_konstanz.ui.configuration.ConfigurationController;
 
 public class MainWindowController implements IController{
@@ -53,25 +54,14 @@ public class MainWindowController implements IController{
 
     @FXML
     void newTabWithProfilingConfig(ActionEvent event) throws IOException {
-//    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Tab.fxml"));
-//    	Tab tab = fxmlLoader.load();
-//    	TabController controller = fxmlLoader.getController();
-//    	controller.setMainWindowController(this);
+
     	Tab tab = new Tab("new");
-//    	TabController tabController = new TabController();
-//		Accordion loadResultContent = tabController.loadResultContent();
-//    	AnchorPane value = new AnchorPane(loadResultContent);
-		ConfigurationController configController = new ConfigurationController(tab);
+
+		ConfigurationController configController = ControlerAndWindowFactory.getInstance().getNewConfigurationController(tab);
 		tab.setContent(configController.getContentNode());
     	tabPane.getTabs().add(tab); 
     	
-//    	AnchorPane.setTopAnchor(loadResultContent, 0.0);
-//    	AnchorPane.setRightAnchor(loadResultContent, 0.0);
-//    	AnchorPane.setLeftAnchor(loadResultContent, 0.0);
-//    	AnchorPane.setBottomAnchor(loadResultContent, 0.0);
-    
-//    	value.autosize();
-//    	loadResultContent.autosize();
+
     }
 
     @FXML
