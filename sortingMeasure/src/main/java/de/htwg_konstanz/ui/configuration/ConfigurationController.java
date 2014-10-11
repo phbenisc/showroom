@@ -169,7 +169,7 @@ public class ConfigurationController implements IController {
 				actualProblemGeneratorConfigValue.getProblemGenerator(),
 				startEleSlider.valueProperty().intValue(), stepSizeSlider.valueProperty().intValue(), 
 				nrOfStepsSlider.valueProperty().intValue(), repSlider.valueProperty().intValue());
-		ResultController rController = new ResultController(configurationModel);
+		ResultController rController = ControlerAndWindowFactory.getInstance().getNewResultController(configurationModel);
 		tab.setContent(rController.getContentNode());
 		
 		
