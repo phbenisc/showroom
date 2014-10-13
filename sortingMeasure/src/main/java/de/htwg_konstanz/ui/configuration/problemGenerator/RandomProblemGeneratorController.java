@@ -19,7 +19,6 @@ import org.uncommons.maths.number.NumberGenerator;
 
 import de.htwg_konstanz.ui.configuration.IDistributionConfiguration;
 import de.htwg_konstanz.ui.configuration.IProblemGeneratorConfig;
-import de.htwg_konstanz.ui.configuration.RNGManager;
 import de.htwg_konstanz.ui.configuration.distribution.DistributionManager;
 import uk.napierdevsoc.problemGenerators.RandomProblemGenerator;
 import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
