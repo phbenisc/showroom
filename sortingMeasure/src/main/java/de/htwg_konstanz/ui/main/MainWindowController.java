@@ -8,7 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.VBox;
@@ -48,20 +48,20 @@ public class MainWindowController implements IController{
 
     @FXML // fx:id="tabPane"
     private TabPane tabPane; // Value injected by FXMLLoader
-    
-    @FXML
-    private Label status; // Value injected by FXMLLoader
 
     @FXML
-    void newTabWithProfilingConfig(ActionEvent event) throws IOException {
+    private ProgressBar progress;
 
+    @FXML
+    void newTabWithProfilingConfig(ActionEvent event){
+    	if(event != null)
+    		event.consume();
+    	
     	Tab tab = new Tab("new");
 
 		ConfigurationController configController = ControlerAndWindowFactory.getInstance().getNewConfigurationController(tab);
 		tab.setContent(configController.getContentNode());
     	tabPane.getTabs().add(tab); 
-    	
-
     }
 
     @FXML
@@ -72,13 +72,14 @@ public class MainWindowController implements IController{
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
         assert tabPane != null : "fx:id=\"tabPane\" was not injected: check your FXML file 'MainWindow.fxml'.";
+        progress.visibleProperty().set(false);       
         
-        
+        //load always one tab
+        newTabWithProfilingConfig(null);
     }
 
 	@Override
-	public Node getContentNode() {
-		
+	public Node getContentNode() {		
 		return rootVBox;
 	}
 }
