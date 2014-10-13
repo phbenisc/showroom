@@ -18,6 +18,8 @@ import uk.napierdevsoc.sortingAlgorithms.SortingManager;
 import de.htwg_konstanz.ui.configuration.ConfigurationModel;
 
 public class AlgorithmMeasureTask extends Task<Result> {
+	
+	
 
 	@Override
 	protected Result call() throws Exception {
@@ -71,7 +73,7 @@ public class AlgorithmMeasureTask extends Task<Result> {
 	private Result result;
 	private final SortingManager sortingManager = new SortingManager();
 
-	public AlgorithmMeasureTask(ConfigurationModel model) {
+	AlgorithmMeasureTask(ConfigurationModel model) {
 		this.model = model;
 		result = new Result(model.getAlgorithms());
 	}

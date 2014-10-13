@@ -16,7 +16,7 @@ public class Result {
 	private ObjectProperty<ObservableList<XYChart.Series<Number,Number>>> shifts;
 	private ObjectProperty<ObservableList<XYChart.Series<Number,Number>>> computionTimes;
 	
-	public Result(Set<String> algos) {
+	Result(Set<String> algos) {
 		comparisions = new SimpleObjectProperty<>(FXCollections.observableArrayList(initSeries(algos)));
 		shifts = new SimpleObjectProperty<>(FXCollections.observableArrayList(initSeries(algos)));
 		computionTimes = new SimpleObjectProperty<>(FXCollections.observableArrayList(initSeries(algos)));

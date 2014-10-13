@@ -27,7 +27,7 @@ import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 public class RandomProblemGeneratorController implements IProblemGeneratorConfig {
 	private static final Logger logger = LoggerFactory.getLogger(RandomProblemGeneratorController.class);
 	
-	public RandomProblemGeneratorController(String fxmlName) {
+	RandomProblemGeneratorController(String fxmlName) {
 		logger.debug("Construct RandomProblemGeneratorController(fxmlName={})", fxmlName);
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlName));
 		fxmlLoader.setController(this);

@@ -7,7 +7,7 @@ import de.htwg_konstanz.ui.configuration.ConfigurationModel;
 public class AlgorithmMeasureService extends Service<Result> {
 	ConfigurationModel model;
 	
-	public AlgorithmMeasureService(ConfigurationModel model){
+	AlgorithmMeasureService(ConfigurationModel model){
 		this.model = model;
 	}
 

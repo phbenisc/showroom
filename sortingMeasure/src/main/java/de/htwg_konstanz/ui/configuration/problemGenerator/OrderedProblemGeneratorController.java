@@ -20,7 +20,7 @@ public class OrderedProblemGeneratorController implements IProblemGeneratorConfi
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrderedProblemGeneratorController.class);
 	
-	public OrderedProblemGeneratorController(String name) {
+	OrderedProblemGeneratorController(String name) {
 		LOGGER.debug("Construct OrderedProblemGeneratorController(fileName={})",name);
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(name));
 		fxmlLoader.setController(this);
