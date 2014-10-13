@@ -16,6 +16,7 @@ import uk.napierdevsoc.problemGenerators.OrderedProblemGenerator;
 import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 
 public class OrderedProblemGeneratorController implements IProblemGeneratorConfig{
+	
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrderedProblemGeneratorController.class);
 	
 	public OrderedProblemGeneratorController(String name) {
@@ -27,7 +28,7 @@ public class OrderedProblemGeneratorController implements IProblemGeneratorConfi
 		} catch (IOException e) {
 			LOGGER.error("Error while loading MainWindow", e);
 		}
-
+		
 	}
 	
 
@@ -52,5 +53,11 @@ public class OrderedProblemGeneratorController implements IProblemGeneratorConfi
 	public IProblemGenerator getProblemGenerator() {
 		return new OrderedProblemGenerator(choiceBox.getValue());
 	}
+
+	public static String getName() {
+		return "Ordered Problem";
+	}
+
+	
 
 }

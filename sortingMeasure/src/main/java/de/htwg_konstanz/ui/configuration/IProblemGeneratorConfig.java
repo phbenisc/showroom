@@ -6,5 +6,9 @@ import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 public interface IProblemGeneratorConfig extends IController{
 	
 	IProblemGenerator getProblemGenerator();
+	
+	public static String getName(){
+		return IProblemGeneratorConfig.class.getSimpleName();
+	}
 
 }

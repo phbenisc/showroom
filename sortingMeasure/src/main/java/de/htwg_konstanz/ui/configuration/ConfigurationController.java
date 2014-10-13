@@ -39,6 +39,7 @@ import de.htwg_konstanz.ui.result.ResultController;
 public class ConfigurationController implements IController {
 
 	private SortingManager manager = new SortingManager();
+	private ProblemGeneratorManager problemManager = new ProblemGeneratorManager();
 
 	private Tab tab;
 
@@ -97,7 +98,7 @@ public class ConfigurationController implements IController {
 	// Generator
 	@FXML
 	// fx:id="generatorChoiceBox"
-	private ChoiceBox<IProblemGeneratorConfig> generatorChoiceBox; // Value injected by FXMLLoader
+	private ChoiceBox<String> generatorChoiceBox; // Value injected by FXMLLoader
 
 	// Algorithms
 	@FXML
@@ -116,13 +117,13 @@ public class ConfigurationController implements IController {
 		}
 	};
 
-	private ChangeListener<IProblemGeneratorConfig> generatorListener = new ChangeListener<IProblemGeneratorConfig>() {
+	private ChangeListener<String> generatorListener = new ChangeListener<String>() {
 		@Override
-		public void changed(ObservableValue<? extends IProblemGeneratorConfig> observable, IProblemGeneratorConfig oldValue,
-				IProblemGeneratorConfig newValue) {
+		public void changed(ObservableValue<? extends String> observable, String oldValue,
+				String newValue) {
 			ObservableList<Node> children = generatorPane.getChildren();
 			children.clear();
-			children.add(newValue.getContentNode());
+			children.add(problemManager.getProblemConfig(newValue).getContentNode());
 			// actualProblemGeneratorConfigValue = newValue;
 		}
 	};
@@ -142,13 +143,13 @@ public class ConfigurationController implements IController {
 		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController());
 		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewRandomProblemGeneratorController());
 
-		ObservableList<IProblemGeneratorConfig> observableArrayList = FXCollections.observableArrayList(generatorConfigs);
+		ObservableList<String> observableArrayList = FXCollections.observableArrayList(problemManager.getAllProblemConfigNames());
 		LOGGER.debug("choiceBox items to display: {}", observableArrayList);
 		generatorChoiceBox.itemsProperty().set(observableArrayList);
 		generatorChoiceBox.valueProperty().addListener(generatorListener);
 		generatorChoiceBox.valueProperty().set(
 				observableArrayList.stream().findFirst()
-						.orElse(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController()));
+						.orElse("Nor Problem Generator found"));
 
 		for (String algo : manager.getAlgorithms()) {
 			CheckBox checkbox = new CheckBox(algo);
@@ -171,7 +172,7 @@ public class ConfigurationController implements IController {
 
 		ConfigurationModel configurationModel = new ConfigurationModel(algos,
 		// actualProblemGeneratorConfigValue.getProblemGenerator(),
-				generatorChoiceBox.getValue().getProblemGenerator(), startEleSlider.valueProperty().intValue(), stepSizeSlider
+				problemManager.getProblemConfig(generatorChoiceBox.getValue()).getProblemGenerator(), startEleSlider.valueProperty().intValue(), stepSizeSlider
 						.valueProperty().intValue(), nrOfStepsSlider.valueProperty().intValue(), repSlider.valueProperty().intValue());
 		ResultController rController = ControlerAndWindowFactory.getInstance().getNewResultController(configurationModel);
 		tab.setContent(rController.getContentNode());

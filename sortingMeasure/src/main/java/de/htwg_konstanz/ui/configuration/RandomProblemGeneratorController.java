@@ -90,4 +90,9 @@ public class RandomProblemGeneratorController implements IProblemGeneratorConfig
     		children.add(distri.getContentNode());				
     	}
     };
+
+
+	public static String getName() {
+		return "Random Problem";
+	}
 }
