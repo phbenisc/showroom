@@ -1,4 +1,4 @@
-package de.htwg_konstanz.sortingMeasure;
+package de.htwg_konstanz.ui.main;
 
 import java.util.Properties;
 
@@ -9,11 +9,10 @@ import org.slf4j.LoggerFactory;
 
 import de.htwg_konstanz.ui.configuration.ConfigurationController;
 import de.htwg_konstanz.ui.configuration.ConfigurationModel;
-import de.htwg_konstanz.ui.main.IMainWindowController;
 import de.htwg_konstanz.ui.result.ResultController;
 
 public class ControlerAndWindowFactory {
-	private static final Logger LOGGER = LoggerFactory.getLogger(MainApp.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(ControlerAndWindowFactory.class);
 	private static ControlerAndWindowFactory me;
 	
 	private  Properties props = new Properties();

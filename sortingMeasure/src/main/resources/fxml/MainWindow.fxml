@@ -28,11 +28,14 @@
       </menus>
     </MenuBar>
       <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS" />
-      <HBox prefHeight="20.0" prefWidth="200.0">
+      <HBox alignment="CENTER_LEFT" VBox.vgrow="NEVER">
          <children>
-            <Label text="Programmed by Philip Benischke" />
-            <Pane HBox.hgrow="ALWAYS" />
-            <Label fx:id="status" text="Status" />
+            <Label text="Programmed by Philip Benischke">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Pane HBox.hgrow="SOMETIMES" />
+            <ProgressBar fx:id="progress" progress="0.0" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
   </children>

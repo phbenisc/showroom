@@ -4,37 +4,43 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.htwg_konstanz.sortingMeasure.ControlerAndWindowFactory;
 import de.htwg_konstanz.ui.configuration.ConfigurationController;
 
-public class MainWindowController implements IController{
+public class MainWindowController extends Application implements IController {
 	
 	protected static  final Logger LOGGER = LoggerFactory.getLogger(MainWindowController.class);
+	
+	public MainWindowController() {
+		this("/fxml/MainWindow.fxml");
+	}
 	
 	/**
 	 * @param fxmlName the name of the file, e.g. MainWindow.fxml
 	 * @throws IOException when the file is loadable
 	 */
-	public MainWindowController(String fxmlName) throws IOException {
+	public MainWindowController(String fxmlName){
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlName));
 		fxmlLoader.setController(this);
 		try {
 			fxmlLoader.load();
 		} catch (IOException e) {
 			LOGGER.error("Error while loading MainWindow", e);
-			throw e;
 		}
 	}
 	@FXML
@@ -66,7 +72,7 @@ public class MainWindowController implements IController{
 
     @FXML
     void openAboutMyApp(ActionEvent event) {
-
+    	new AboutMyApp(getHostServices());
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
@@ -82,4 +88,25 @@ public class MainWindowController implements IController{
 	public Node getContentNode() {		
 		return rootVBox;
 	}
+	
+	/**
+	 * will only be called if the JVM doesn't know that this is an javafx application
+	 * @param args
+	 * @throws Exception
+	 */
+    public static void main(String[] args) throws Exception {    	
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) {
+
+        LOGGER.info("Starting MeasureAlgorithms JavaFX application");
+        Parent rootNode = (Parent) this.getContentNode();
+        Scene scene = new Scene(rootNode);
+        stage.setTitle("JavaFX MeasureAlgorithms");
+        stage.setScene(scene);
+        stage.setMaximized(true);
+        stage.show();
+    }
 }
