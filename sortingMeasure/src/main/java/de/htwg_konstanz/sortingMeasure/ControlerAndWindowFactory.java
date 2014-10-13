@@ -10,8 +10,8 @@ import org.slf4j.LoggerFactory;
 import de.htwg_konstanz.ui.configuration.ConfigurationController;
 import de.htwg_konstanz.ui.configuration.ConfigurationModel;
 import de.htwg_konstanz.ui.configuration.IProblemGeneratorConfig;
-import de.htwg_konstanz.ui.configuration.OrderedProblemGeneratorController;
-import de.htwg_konstanz.ui.configuration.RandomProblemGeneratorController;
+import de.htwg_konstanz.ui.configuration.problemGenerator.OrderedProblemGeneratorController;
+import de.htwg_konstanz.ui.configuration.problemGenerator.RandomProblemGeneratorController;
 import de.htwg_konstanz.ui.main.IMainWindowController;
 import de.htwg_konstanz.ui.result.ResultController;
 
