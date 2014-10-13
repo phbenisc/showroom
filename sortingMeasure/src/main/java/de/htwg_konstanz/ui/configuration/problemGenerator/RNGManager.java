@@ -1,4 +1,4 @@
-package de.htwg_konstanz.ui.configuration;
+package de.htwg_konstanz.ui.configuration.problemGenerator;
 
 import java.util.HashMap;
 import java.util.Map;
