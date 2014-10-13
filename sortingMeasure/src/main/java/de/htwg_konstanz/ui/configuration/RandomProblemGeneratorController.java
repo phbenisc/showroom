@@ -1,20 +1,7 @@
 package de.htwg_konstanz.ui.configuration;
 
 import java.io.IOException;
-import java.security.GeneralSecurityException;
 import java.util.Random;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.uncommons.maths.number.NumberGenerator;
-import org.uncommons.maths.random.AESCounterRNG;
-import org.uncommons.maths.random.CMWC4096RNG;
-import org.uncommons.maths.random.CellularAutomatonRNG;
-import org.uncommons.maths.random.ContinuousUniformGenerator;
-import org.uncommons.maths.random.JavaRNG;
-import org.uncommons.maths.random.MersenneTwisterRNG;
-import org.uncommons.maths.random.RepeatableRNG;
-import org.uncommons.maths.random.XORShiftRNG;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -25,6 +12,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.VBox;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.uncommons.maths.number.NumberGenerator;
+
 import uk.napierdevsoc.problemGenerators.RandomProblemGenerator;
 import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 
