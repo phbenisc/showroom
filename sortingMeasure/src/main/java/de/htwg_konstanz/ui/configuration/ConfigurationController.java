@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 
 import uk.napierdevsoc.sortingAlgorithms.SortingManager;
 import de.htwg_konstanz.sortingMeasure.ControlerAndWindowFactory;
+import de.htwg_konstanz.ui.configuration.problemGenerator.ProblemGeneratorManager;
 import de.htwg_konstanz.ui.main.IController;
 import de.htwg_konstanz.ui.result.ResultController;
 

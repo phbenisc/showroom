@@ -1,4 +1,4 @@
-package de.htwg_konstanz.ui.configuration;
+package de.htwg_konstanz.ui.configuration.distribution;
 
 import java.io.IOException;
 import java.util.Random;
@@ -14,10 +14,12 @@ import org.slf4j.LoggerFactory;
 import org.uncommons.maths.number.NumberGenerator;
 import org.uncommons.maths.random.ContinuousUniformGenerator;
 
+import de.htwg_konstanz.ui.configuration.IDistributionConfiguration;
+
 public class ContinuousUniformController implements IDistributionConfiguration{
 	private static final Logger logger = LoggerFactory.getLogger(ContinuousUniformController.class);
 	
-	public ContinuousUniformController(String fxmlName) {
+	ContinuousUniformController(String fxmlName) {
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlName));
 		fxmlLoader.setController(this);
 		try {

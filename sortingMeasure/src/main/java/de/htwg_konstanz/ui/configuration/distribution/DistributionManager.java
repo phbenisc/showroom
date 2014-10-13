@@ -1,9 +1,11 @@
-package de.htwg_konstanz.ui.configuration;
+package de.htwg_konstanz.ui.configuration.distribution;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
+
+import de.htwg_konstanz.ui.configuration.IDistributionConfiguration;
 
 
 public class DistributionManager {

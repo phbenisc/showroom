@@ -1,4 +1,4 @@
-package de.htwg_konstanz.ui.configuration;
+package de.htwg_konstanz.ui.configuration.problemGenerator;
 
 import java.io.IOException;
 
@@ -12,6 +12,7 @@ import javafx.scene.layout.HBox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.htwg_konstanz.ui.configuration.IProblemGeneratorConfig;
 import uk.napierdevsoc.problemGenerators.OrderedProblemGenerator;
 import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 
