@@ -20,11 +20,14 @@ import org.slf4j.LoggerFactory;
 
 import de.htwg_konstanz.ui.configuration.ConfigurationModel;
 import de.htwg_konstanz.ui.main.IController;
+import de.htwg_konstanz.ui.main.TabController;
 
 public class ResultController implements IController {
 	private final static Logger LOGGER = LoggerFactory.getLogger(ResultController.class);
 
-	public ResultController(String fxmlName, ConfigurationModel model) {
+	public ResultController(String fxmlName,TabController parrent,  ConfigurationModel model) {
+		this.parrent = parrent;
+		parrent.setTabName("Result");
 		service = new AlgorithmMeasureService(model);
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlName));
 		fxmlLoader.setController(this);
@@ -35,11 +38,13 @@ public class ResultController implements IController {
 			e.printStackTrace();
 		}
 	}
+	
+	private TabController parrent;
 
 
-	public ResultController(ConfigurationModel model) {
-		this("/fxml/Result.fxml", model);
-	}
+//	public ResultController(ConfigurationModel model) {
+//		this("/fxml/Result.fxml", model);
+//	}
 
 
 	private AlgorithmMeasureService service;

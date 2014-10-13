@@ -52,13 +52,13 @@ public class ControlerAndWindowFactory {
 		return iMainWindowController;
 	}
 	
-	public ResultController getNewResultController(ConfigurationModel model){		
-		LOGGER.debug("getNewResultController(model={})",model);
-		return new ResultController(props.getProperty("resultWindow"), model);
+	public ResultController getNewResultController(TabController tabController, ConfigurationModel model){		
+		LOGGER.debug("getNewResultController(tabController={}, model={})",tabController, model);
+		return new ResultController(props.getProperty("resultWindow"),tabController, model);
 	}
 
 	
-	public ConfigurationController getNewConfigurationController(Tab tab) {
+	public ConfigurationController getNewConfigurationController(TabController tab) {
 		return new ConfigurationController(props.getProperty("configurationWindow"),tab);
 	}
 

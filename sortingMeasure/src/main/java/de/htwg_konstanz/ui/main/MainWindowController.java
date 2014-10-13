@@ -63,10 +63,8 @@ public class MainWindowController extends Application implements IController {
     	if(event != null)
     		event.consume();
     	
-    	Tab tab = new Tab("new");
-
-		ConfigurationController configController = ControlerAndWindowFactory.getInstance().getNewConfigurationController(tab);
-		tab.setContent(configController.getContentNode());
+    	TabController tab = new TabController();
+    	
     	tabPane.getTabs().add(tab); 
     }
 

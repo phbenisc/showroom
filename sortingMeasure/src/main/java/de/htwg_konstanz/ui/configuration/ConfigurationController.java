@@ -33,6 +33,7 @@ import uk.napierdevsoc.sortingAlgorithms.SortingManager;
 import de.htwg_konstanz.ui.configuration.problemGenerator.ProblemGeneratorManager;
 import de.htwg_konstanz.ui.main.ControlerAndWindowFactory;
 import de.htwg_konstanz.ui.main.IController;
+import de.htwg_konstanz.ui.main.TabController;
 import de.htwg_konstanz.ui.result.ResultController;
 
 public class ConfigurationController implements IController {
@@ -40,7 +41,7 @@ public class ConfigurationController implements IController {
 	private SortingManager manager = new SortingManager();
 	private ProblemGeneratorManager problemManager = new ProblemGeneratorManager();
 
-	private Tab tab;
+	private TabController tab;
 
 	protected static final Logger LOGGER = LoggerFactory.getLogger(ConfigurationController.class);
 
@@ -50,8 +51,9 @@ public class ConfigurationController implements IController {
 	 * @throws IOException
 	 *             when the file is loadable
 	 */
-	public ConfigurationController(String fxmlName, Tab tab) {
+	public ConfigurationController(String fxmlName, TabController tab) {
 		this.tab = tab;
+		tab.setTabName("new Configuration");
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlName));
 		fxmlLoader.setController(this);
 		try {
@@ -170,8 +172,7 @@ public class ConfigurationController implements IController {
 		ConfigurationModel configurationModel = new ConfigurationModel(algos,
 				problemManager.getProblemConfig(generatorChoiceBox.getValue()).getProblemGenerator(), startEleSlider.valueProperty().intValue(), stepSizeSlider
 						.valueProperty().intValue(), nrOfStepsSlider.valueProperty().intValue(), repSlider.valueProperty().intValue());
-		ResultController rController = ControlerAndWindowFactory.getInstance().getNewResultController(configurationModel);
-		tab.setContent(rController.getContentNode());
+		tab.toResultScreen(configurationModel);
 
 	}
 
