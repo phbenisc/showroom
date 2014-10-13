@@ -129,8 +129,7 @@ public class ConfigurationController implements IController {
 		}
 	};
 
-	// private IProblemGeneratorConfig actualProblemGeneratorConfigValue;
-	private List<IProblemGeneratorConfig> generatorConfigs = new ArrayList<IProblemGeneratorConfig>();
+
 
 	@FXML
 	// This method is called by the FXMLLoader when initialisation is complete
@@ -141,8 +140,7 @@ public class ConfigurationController implements IController {
 		stepSizeField.textProperty().bindBidirectional(stepSizeSlider.valueProperty(), converter);
 		nrOfStepsField.textProperty().bindBidirectional(nrOfStepsSlider.valueProperty(), converter);
 
-		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewOrderedProblemGeneratorController());
-		generatorConfigs.add(ControlerAndWindowFactory.getInstance().getNewRandomProblemGeneratorController());
+
 
 		ObservableList<String> observableArrayList = FXCollections.observableArrayList(problemManager.getAllProblemConfigNames());
 		LOGGER.debug("choiceBox items to display: {}", observableArrayList);
@@ -172,7 +170,6 @@ public class ConfigurationController implements IController {
 		}
 
 		ConfigurationModel configurationModel = new ConfigurationModel(algos,
-		// actualProblemGeneratorConfigValue.getProblemGenerator(),
 				problemManager.getProblemConfig(generatorChoiceBox.getValue()).getProblemGenerator(), startEleSlider.valueProperty().intValue(), stepSizeSlider
 						.valueProperty().intValue(), nrOfStepsSlider.valueProperty().intValue(), repSlider.valueProperty().intValue());
 		ResultController rController = ControlerAndWindowFactory.getInstance().getNewResultController(configurationModel);

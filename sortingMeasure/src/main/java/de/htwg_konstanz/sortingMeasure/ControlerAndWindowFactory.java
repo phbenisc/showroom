@@ -60,19 +60,13 @@ public class ControlerAndWindowFactory {
 		LOGGER.debug("getNewResultController(model={})",model);
 		return new ResultController(props.getProperty("resultWindow"), model);
 	}
-	
-	public OrderedProblemGeneratorController getNewOrderedProblemGeneratorController(){
-		return new OrderedProblemGeneratorController(props.getProperty("orderedProblemGenWindow"));
-	}
+
 	
 	public ConfigurationController getNewConfigurationController(Tab tab) {
 		return new ConfigurationController(props.getProperty("configurationWindow"),tab);
 	}
 
 
-	public IProblemGeneratorConfig getNewRandomProblemGeneratorController() {
-		return new RandomProblemGeneratorController(props.getProperty("randomProblemGenWindow"));
-	}
 	
 	
 
