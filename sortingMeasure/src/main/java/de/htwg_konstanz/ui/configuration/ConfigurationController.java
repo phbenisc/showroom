@@ -20,7 +20,6 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Slider;
-import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
@@ -31,10 +30,8 @@ import org.slf4j.LoggerFactory;
 
 import uk.napierdevsoc.sortingAlgorithms.SortingManager;
 import de.htwg_konstanz.ui.configuration.problemGenerator.ProblemGeneratorManager;
-import de.htwg_konstanz.ui.main.ControlerAndWindowFactory;
 import de.htwg_konstanz.ui.main.IController;
 import de.htwg_konstanz.ui.main.TabController;
-import de.htwg_konstanz.ui.result.ResultController;
 
 public class ConfigurationController implements IController {
 

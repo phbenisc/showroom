@@ -2,8 +2,6 @@ package de.htwg_konstanz.ui.main;
 
 import java.util.Properties;
 
-import javafx.scene.control.Tab;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
