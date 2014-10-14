@@ -10,7 +10,6 @@ import javafx.scene.Node;
 import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.LineChart;
 import javafx.scene.control.Accordion;
-import javafx.scene.control.ProgressIndicator;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
@@ -58,10 +57,6 @@ public class ResultController implements IController {
 	@FXML
 	private AnchorPane anchorPane;
 
-
-    @FXML
-    private ProgressIndicator progressIndicator;
-
 	@FXML
 	private Region region;
 
@@ -89,9 +84,8 @@ public class ResultController implements IController {
 	@FXML
 	// This method is called by the FXMLLoader when initialisation is complete
 	void initialize() {
-		progressIndicator.progressProperty().bind(service.progressProperty());
+		parrent.status(service.progressProperty(), service.runningProperty());
 		region.visibleProperty().bind(service.runningProperty());
-		progressIndicator.visibleProperty().bind(service.runningProperty());
 		service.start();
 				
 		AnchorPane.setBottomAnchor(stackPane, 0.0);

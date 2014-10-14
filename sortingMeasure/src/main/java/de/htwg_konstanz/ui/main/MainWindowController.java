@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.application.Application;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -60,7 +61,7 @@ public class MainWindowController extends Application implements IController {
     	if(event != null)
     		event.consume();
     	
-    	TabController tab = new TabController();
+    	TabController tab = new TabController(this);
     	
     	tabPane.getTabs().add(tab); 
     }
@@ -83,6 +84,12 @@ public class MainWindowController extends Application implements IController {
 	public Node getContentNode() {		
 		return rootVBox;
 	}
+	
+	public void status(ObservableValue<? extends Number> observable, ObservableValue<? extends Boolean> visObservable){
+		progress.progressProperty().bind(observable);
+		progress.visibleProperty().bind(visObservable);
+	}
+	
 	
 	/**
 	 * will only be called if the JVM doesn't know that this is an javafx application
