@@ -12,13 +12,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import uk.napierdevsoc.sort.bubbleSort.BubbleSort;
-import uk.napierdevsoc.sort.interfaces.ISortAlgorithm;
+import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
 import uk.napierdevsoc.sort.interfaces.ISortData;
 import uk.napierdevsoc.sort.quickSort.SimpleQuickSort;
 
 public class SortingManager {
 
-	private Map<String, ISortAlgorithm> algorithms = new HashMap<>();
+	private Map<String, SortAlgorithm> algorithms = new HashMap<>();
 	private final Logger logger = LoggerFactory.getLogger(SortingManager.class);
 
 	public SortingManager() {
@@ -44,14 +44,14 @@ public class SortingManager {
 			throw new IllegalArgumentException("the kombination of the parameters exceeds the max. array length!");
 
 		// get all Algorithms and initData
-		Map<ISortAlgorithm, SortProfile> algos = initAlgoData(algorithms);
+		Map<SortAlgorithm, SortProfile> algos = initAlgoData(algorithms);
 
 		for (int step = 1; step < numberOfSteps+1; step++) {
 			// in every step the problem size will be increased
 			double[][] problems = problemGenerator.createProblems(repetitions, numberOfStartElements);
 			// all algorithms solve the same problems
 			// iterate over algorithms
-			for (ISortAlgorithm algorithm : algos.keySet()) {
+			for (SortAlgorithm algorithm : algos.keySet()) {
 				profileAlgorithm(dataCallback, algos, step, problems, algorithm);
 			}
 			numberOfStartElements += stepSize;
@@ -67,8 +67,8 @@ public class SortingManager {
 	 * @param algorithm
 	 * @return 
 	 */
-	public List<ISortData> profileAlgorithm(IAlgorithmDataCallback dataCallback, Map<ISortAlgorithm, SortProfile> algos, int step, double[][] problems,
-			ISortAlgorithm algorithm) {
+	public List<ISortData> profileAlgorithm(IAlgorithmDataCallback dataCallback, Map<SortAlgorithm, SortProfile> algos, int step, double[][] problems,
+			SortAlgorithm algorithm) {
 		SortProfile sortProfile = null;
 		// give them a copy of every problem to solve
 		sortProfile = algos.get(algorithm);
@@ -84,10 +84,10 @@ public class SortingManager {
 		return sortProfile.getSortDataFromIteration(step);
 	}
 
-	public Map<ISortAlgorithm, SortProfile> initAlgoData(Set<String> algorithms) {
-		Map<ISortAlgorithm, SortProfile> algoData = new HashMap<>();
-		Set<ISortAlgorithm> algos = getAlgorithms(algorithms);
-		for (ISortAlgorithm iSortAlgorithm : algos) {
+	public Map<SortAlgorithm, SortProfile> initAlgoData(Set<String> algorithms) {
+		Map<SortAlgorithm, SortProfile> algoData = new HashMap<>();
+		Set<SortAlgorithm> algos = getAlgorithms(algorithms);
+		for (SortAlgorithm iSortAlgorithm : algos) {
 			algoData.put(iSortAlgorithm, new SortProfile(iSortAlgorithm));
 		}
 		return algoData;
@@ -99,10 +99,10 @@ public class SortingManager {
 	 * @throws IllegalArgumentException
 	 *             if the algorithm was not found
 	 */
-	private Set<ISortAlgorithm> getAlgorithms(Set<String> algorithms) throws IllegalArgumentException {
-		Set<ISortAlgorithm> algos = new HashSet<ISortAlgorithm>();
+	private Set<SortAlgorithm> getAlgorithms(Set<String> algorithms) throws IllegalArgumentException {
+		Set<SortAlgorithm> algos = new HashSet<SortAlgorithm>();
 		for (String string : algorithms) {
-			ISortAlgorithm algo = this.algorithms.get(string);
+			SortAlgorithm algo = this.algorithms.get(string);
 			if (algo == null)
 				throw new IllegalArgumentException(String.format("Algorithm %s was not found", string));
 			algos.add(algo);
@@ -116,7 +116,7 @@ public class SortingManager {
 		return keySet;
 	}
 
-	public void addAlgorithm(final ISortAlgorithm algorithm) {
+	public void addAlgorithm(final SortAlgorithm algorithm) {
 		logger.trace("addAlgorithm(algorithm={}) called", algorithm);
 		if (algorithm == null)
 			throw new IllegalArgumentException("argument was null!");

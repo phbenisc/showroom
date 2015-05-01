@@ -3,7 +3,7 @@ package uk.napierdevsoc.sort.quickSort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import uk.napierdevsoc.sort.interfaces.ISortAlgorithm;
+import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
 import uk.napierdevsoc.sort.interfaces.ISortData;
 import uk.napierdevsoc.sort.util.SortUtil;
 
@@ -13,7 +13,7 @@ import uk.napierdevsoc.sort.util.SortUtil;
  * @see http://www.java-uni.de/index.php?Seite=86
  *
  */
-public class SimpleQuickSort implements ISortAlgorithm {
+public class SimpleQuickSort extends SortAlgorithm {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(SimpleQuickSort.class);
 

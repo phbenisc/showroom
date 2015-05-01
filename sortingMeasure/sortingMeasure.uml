@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_CToysPAmEeSZVKM2bAqEPw" name="sortingMeasure">
+    <eAnnotations xmi:id="_Ceq-APAmEeSZVKM2bAqEPw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Ceq-AfAmEeSZVKM2bAqEPw" source="codegen">
+        <details xmi:id="_CerlEPAmEeSZVKM2bAqEPw" key="codegenDirectory" value="/sortingMeasure/src/main/java"/>
+        <details xmi:id="_DSiq8PAmEeSZVKM2bAqEPw" key="AssociatedSourceCode" value="/sortingMeasure/src/main/java/uk/napierdevsoc/problemGenerators/OrderedProblemGenerator.java;2255666903/1;/sortingMeasure/src/main/java/uk/napierdevsoc/problemGenerators/RandomProblemGenerator.java;3705921664/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sort/bubbleSort/BubbleSort.java;941970187/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sort/interfaces/ISortAlgorithm.java;1498962009/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sort/interfaces/ISortData.java;3606196676/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sort/quickSort/SimpleQuickSort.java;2952615116/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sort/util/SortData.java;2614304085/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sort/util/SortDataMock.java;1721889313/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sort/util/SortUtil.java;242270697/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sortingAlgorithms/IAlgorithmDataCallback.java;14053678/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sortingAlgorithms/IProblemGenerator.java;2896661660/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sortingAlgorithms/SortProfile.java;191185540/1;/sortingMeasure/src/main/java/uk/napierdevsoc/sortingAlgorithms/SortingManager.java;2652420836/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_DHB-gPAmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_DHB-gfAmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_DHClkPAmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_DHClkfAmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_DHClkvAmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_DHClk_AmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_DHCllPAmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_DHCllfAmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_DHEawPAmEeSZVKM2bAqEPw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DF0dkPAmEeSZVKM2bAqEPw" name="uk">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DF1EoPAmEeSZVKM2bAqEPw" name="napierdevsoc">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DF1rsPAmEeSZVKM2bAqEPw" name="sortingAlgorithms">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_DIWNIPAmEeSZVKM2bAqEPw" name="IAlgorithmDataCallback">
+            <ownedOperation xmi:id="_DKvZ0PAmEeSZVKM2bAqEPw" name="callback">
+              <ownedParameter xmi:id="_DKvZ0fAmEeSZVKM2bAqEPw" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKvZ0vAmEeSZVKM2bAqEPw" name="problemSize">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKvZ0_AmEeSZVKM2bAqEPw" name="list" type="_DKY0gPAmEeSZVKM2bAqEPw"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_DIXbQPAmEeSZVKM2bAqEPw" name="IProblemGenerator">
+            <ownedOperation xmi:id="_DIYCUPAmEeSZVKM2bAqEPw" name="createProblem">
+              <ownedParameter xmi:id="_DIYCUfAmEeSZVKM2bAqEPw" name="size">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DIYCUvAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIYCU_AmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DIYpYfAmEeSZVKM2bAqEPw" name="createProblems" method="_DLY6EPAmEeSZVKM2bAqEPw">
+              <eAnnotations xmi:id="_DIYpZPAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DIYpZfAmEeSZVKM2bAqEPw" key="defender"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DIYpYvAmEeSZVKM2bAqEPw" name="numberOfProblems">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DIYpY_AmEeSZVKM2bAqEPw" name="sizeOfTheProblems">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DIZQcPAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIZQcfAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DIfXEPAmEeSZVKM2bAqEPw" name="SortProfile">
+            <ownedAttribute xmi:id="_DLIbYPAmEeSZVKM2bAqEPw" name="nameOfAlgorithm" isLeaf="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_DLJCcfAmEeSZVKM2bAqEPw" name="sortingData" isLeaf="true" type="_DKY0gPAmEeSZVKM2bAqEPw" isReadOnly="true" association="_DLp_0fAmEeSZVKM2bAqEPw">
+              <qualifier xmi:id="_DLJpgvAmEeSZVKM2bAqEPw">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </qualifier>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_DLJpgPAmEeSZVKM2bAqEPw" value="new HashMap&lt;>()"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLY6FfAmEeSZVKM2bAqEPw" name="SortProfile" specification="_DKce4fAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLY6FvAmEeSZVKM2bAqEPw" name="algo"/>
+              <ownedParameter xmi:id="_DLY6F_AmEeSZVKM2bAqEPw" type="_DIfXEPAmEeSZVKM2bAqEPw" direction="return"/>
+              <language>java</language>
+              <body>nameOfAlgorithm = algo.getClass().getName();
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLZhIPAmEeSZVKM2bAqEPw" name="addSortData" specification="_DKdF8PAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLZhIfAmEeSZVKM2bAqEPw" name="step">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLZhIvAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+              <language>java</language>
+              <body>if(sortingData.containsKey(step) &amp;&amp; sortingData.get(step) != null)
+			sortingData.get(step).add(sortData);
+		else{
+			List&lt;ISortData> arrayList = new ArrayList&lt;>();
+			arrayList.add(sortData);
+			sortingData.put(step, arrayList);
+		}
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLZhI_AmEeSZVKM2bAqEPw" name="getSortDataFromIteration" specification="_DIglMPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLZhJPAmEeSZVKM2bAqEPw" name="iteration">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLZhJfAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLZhJvAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return sortingData.get(iteration);
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_DIglMPAmEeSZVKM2bAqEPw" name="getSortDataFromIteration" visibility="package" method="_DLZhI_AmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DIglMfAmEeSZVKM2bAqEPw" name="iteration">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DIhMQPAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIhMQfAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DKce4fAmEeSZVKM2bAqEPw" name="SortProfile" visibility="package" method="_DLY6FfAmEeSZVKM2bAqEPw">
+              <eAnnotations xmi:id="_DKce4_AmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DKce5PAmEeSZVKM2bAqEPw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DKce4vAmEeSZVKM2bAqEPw" name="algo"/>
+              <ownedParameter xmi:id="_DKce5fAmEeSZVKM2bAqEPw" type="_DIfXEPAmEeSZVKM2bAqEPw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DKdF8PAmEeSZVKM2bAqEPw" name="addSortData" visibility="package" method="_DLZhIPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DKdF8fAmEeSZVKM2bAqEPw" name="step">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKdF8vAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DIjBcPAmEeSZVKM2bAqEPw" name="SortingManager">
+            <ownedAttribute xmi:id="_DLKQkPAmEeSZVKM2bAqEPw" name="algorithms" visibility="private" association="_DLrN8PAmEeSZVKM2bAqEPw">
+              <qualifier xmi:id="_DLKQk_AmEeSZVKM2bAqEPw">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </qualifier>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_DLKQkfAmEeSZVKM2bAqEPw" value="new HashMap&lt;>()"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_DLK3oPAmEeSZVKM2bAqEPw" name="logger" visibility="private" isLeaf="true" type="_DKKyEPAmEeSZVKM2bAqEPw" isReadOnly="true" association="_DLr1AfAmEeSZVKM2bAqEPw">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_DLK3ofAmEeSZVKM2bAqEPw" value="LoggerFactory.getLogger(SortingManager.class)"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLZhJ_AmEeSZVKM2bAqEPw" name="SortingManager" specification="_DIjogPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLZhKPAmEeSZVKM2bAqEPw" type="_DIjBcPAmEeSZVKM2bAqEPw" direction="return"/>
+              <language>java</language>
+              <body>addAlgorithm(new BubbleSort());
+		addAlgorithm(new SimpleQuickSort());
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLaIMPAmEeSZVKM2bAqEPw" name="exceedsMaxArraySize" specification="_DIk2oPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLaIMfAmEeSZVKM2bAqEPw" name="numberOfStartElements">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLaIMvAmEeSZVKM2bAqEPw" name="numberOfSteps">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLaIM_AmEeSZVKM2bAqEPw" name="stepSize">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLaINPAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>logger.debug(&quot;exceedsIntegerRange(numberOfStartElements={}, numberOfSteps={}, stepSize={}) called&quot;, numberOfStartElements,
+				numberOfSteps);
+
+		double highestNumberOfElements = 0; // double because it is possible that a multiplication beetween int exceeds
+											// Long.MAX_Value
+		highestNumberOfElements = numberOfStartElements + (double) (numberOfSteps * 1.0 * stepSize);
+		boolean result = highestNumberOfElements > Integer.MAX_VALUE;
+		logger.debug(&quot;exceedsIntegerRange return={}&quot;, result);
+		return result;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLaINfAmEeSZVKM2bAqEPw" name="profileAlgorithms" specification="_DKxPAPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLaINvAmEeSZVKM2bAqEPw" name="algorithms" type="_DKhXYfAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLaIN_AmEeSZVKM2bAqEPw" name="dataCallback" type="_DIWNIPAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLaIOPAmEeSZVKM2bAqEPw" name="problemGenerator" type="_DIXbQPAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLaIOfAmEeSZVKM2bAqEPw" name="numberOfStartElements">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLaIOvAmEeSZVKM2bAqEPw" name="stepSize">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLaIO_AmEeSZVKM2bAqEPw" name="numberOfSteps">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLaIPPAmEeSZVKM2bAqEPw" name="repetitions">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLaIPfAmEeSZVKM2bAqEPw" type="_DIfXEPAmEeSZVKM2bAqEPw" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLaIPvAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>if (exceedsMaxArraySize(numberOfStartElements, numberOfSteps, stepSize))
+			throw new IllegalArgumentException(&quot;the kombination of the parameters exceeds the max. array length!&quot;);
+
+		// get all Algorithms and initData
+		Map&lt;ISortAlgorithm, SortProfile> algos = initAlgoData(algorithms);
+
+		for (int step = 1; step &lt; numberOfSteps+1; step++) {
+			// in every step the problem size will be increased
+			double[][] problems = problemGenerator.createProblems(repetitions, numberOfStartElements);
+			// all algorithms solve the same problems
+			// iterate over algorithms
+			for (ISortAlgorithm algorithm : algos.keySet()) {
+				profileAlgorithm(dataCallback, algos, step, problems, algorithm);
+			}
+			numberOfStartElements += stepSize;
+		}
+		return algos.values();
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLavQPAmEeSZVKM2bAqEPw" name="profileAlgorithm" specification="_DKzEMfAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLavQfAmEeSZVKM2bAqEPw" name="dataCallback" type="_DIWNIPAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLavQvAmEeSZVKM2bAqEPw" name="algos" type="_DKb30PAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLavQ_AmEeSZVKM2bAqEPw" name="step">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLavRPAmEeSZVKM2bAqEPw" name="problems">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLavRfAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLavRvAmEeSZVKM2bAqEPw" name="algorithm"/>
+              <ownedParameter xmi:id="_DLavR_AmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLavSPAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>SortProfile sortProfile = null;
+		// give them a copy of every problem to solve
+		sortProfile = algos.get(algorithm);
+		for (int j = 0; j &lt; problems.length; j++) {
+			// copy
+			double[] problem = Arrays.copyOf(problems[j], problems[j].length);
+			// sort array
+			ISortData sortData = algorithm.sortWithMeasure(problem);
+			// store Data
+			sortProfile.addSortData(step, sortData);
+		}
+		dataCallback.callback(algorithm.getClass().getName(), problems[0].length, sortProfile.getSortDataFromIteration(step));
+		return sortProfile.getSortDataFromIteration(step);
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLavSfAmEeSZVKM2bAqEPw" name="initAlgoData" specification="_DK05YvAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLavSvAmEeSZVKM2bAqEPw" name="algorithms" type="_DKhXYfAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLavS_AmEeSZVKM2bAqEPw" type="_DKb30PAmEeSZVKM2bAqEPw" direction="return"/>
+              <language>java</language>
+              <body>Map&lt;ISortAlgorithm, SortProfile> algoData = new HashMap&lt;>();
+		Set&lt;ISortAlgorithm> algos = getAlgorithms(algorithms);
+		for (ISortAlgorithm iSortAlgorithm : algos) {
+			algoData.put(iSortAlgorithm, new SortProfile(iSortAlgorithm));
+		}
+		return algoData;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLavTPAmEeSZVKM2bAqEPw" name="getAlgorithms" specification="_DK3VofAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLavTfAmEeSZVKM2bAqEPw" name="algorithms" type="_DKhXYfAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLavTvAmEeSZVKM2bAqEPw" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLavT_AmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>Set&lt;ISortAlgorithm> algos = new HashSet&lt;ISortAlgorithm>();
+		for (String string : algorithms) {
+			ISortAlgorithm algo = this.algorithms.get(string);
+			if (algo == null)
+				throw new IllegalArgumentException(String.format(&quot;Algorithm %s was not found&quot;, string));
+			algos.add(algo);
+		}
+		return algos;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLbWUPAmEeSZVKM2bAqEPw" name="getAlgorithms" specification="_DIpIEPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLbWUfAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLbWUvAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>Set&lt;String> keySet = algorithms.keySet();
+		logger.trace(&quot;getAlgorithms called. return={}&quot;, keySet);
+		return keySet;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLbWU_AmEeSZVKM2bAqEPw" name="addAlgorithm" specification="_DKjMkPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLbWVPAmEeSZVKM2bAqEPw" name="algorithm">
+                <eAnnotations xmi:id="_DLbWVfAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DLbWVvAmEeSZVKM2bAqEPw" key="final"/>
+                </eAnnotations>
+              </ownedParameter>
+              <language>java</language>
+              <body>logger.trace(&quot;addAlgorithm(algorithm={}) called&quot;, algorithm);
+		if (algorithm == null)
+			throw new IllegalArgumentException(&quot;argument was null!&quot;);
+		this.algorithms.put(algorithm.getClass().getName(), algorithm);
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLbWV_AmEeSZVKM2bAqEPw" name="getAllProblemGenerators" specification="_DIqWMPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLbWWPAmEeSZVKM2bAqEPw" type="_DIXbQPAmEeSZVKM2bAqEPw" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLbWWfAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub
+		return null;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_DIjogPAmEeSZVKM2bAqEPw" name="SortingManager" method="_DLZhJ_AmEeSZVKM2bAqEPw">
+              <eAnnotations xmi:id="_DIkPkPAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DIkPkfAmEeSZVKM2bAqEPw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DIkPkvAmEeSZVKM2bAqEPw" type="_DIjBcPAmEeSZVKM2bAqEPw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DIk2oPAmEeSZVKM2bAqEPw" name="exceedsMaxArraySize" method="_DLaIMPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DIk2ofAmEeSZVKM2bAqEPw" name="numberOfStartElements">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DIk2ovAmEeSZVKM2bAqEPw" name="numberOfSteps">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DIk2o_AmEeSZVKM2bAqEPw" name="stepSize">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DIk2pPAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DIpIEPAmEeSZVKM2bAqEPw" name="getAlgorithms" method="_DLbWUPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DIpvIPAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIpvIfAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DIqWMPAmEeSZVKM2bAqEPw" name="getAllProblemGenerators" method="_DLbWV_AmEeSZVKM2bAqEPw">
+              <eAnnotations xmi:id="_DIqWM_AmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DIqWNPAmEeSZVKM2bAqEPw" key="generic_container"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DIqWMfAmEeSZVKM2bAqEPw" type="_DIXbQPAmEeSZVKM2bAqEPw" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIqWMvAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DKjMkPAmEeSZVKM2bAqEPw" name="addAlgorithm" method="_DLbWU_AmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DKjMkfAmEeSZVKM2bAqEPw" name="algorithm">
+                <eAnnotations xmi:id="_DKjMkvAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DKjMk_AmEeSZVKM2bAqEPw" key="final"/>
+                </eAnnotations>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DKxPAPAmEeSZVKM2bAqEPw" name="profileAlgorithms" method="_DLaINfAmEeSZVKM2bAqEPw">
+              <eAnnotations xmi:id="_DKydIPAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DKydIfAmEeSZVKM2bAqEPw" key="generic_container"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DKx2EPAmEeSZVKM2bAqEPw" name="algorithms" type="_DKhXYfAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DKx2EfAmEeSZVKM2bAqEPw" name="dataCallback" type="_DIWNIPAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DKx2EvAmEeSZVKM2bAqEPw" name="problemGenerator" type="_DIXbQPAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DKx2E_AmEeSZVKM2bAqEPw" name="numberOfStartElements">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKx2FPAmEeSZVKM2bAqEPw" name="stepSize">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKx2FfAmEeSZVKM2bAqEPw" name="numberOfSteps">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKx2FvAmEeSZVKM2bAqEPw" name="repetitions">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKx2F_AmEeSZVKM2bAqEPw" type="_DIfXEPAmEeSZVKM2bAqEPw" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKx2GPAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DKzEMfAmEeSZVKM2bAqEPw" name="profileAlgorithm" method="_DLavQPAmEeSZVKM2bAqEPw">
+              <ownedComment xmi:id="_DLfAsPAmEeSZVKM2bAqEPw">
+                <body>@param dataCallback
+	 * @param algos
+	 * @param step
+	 * @param problems
+	 * @param algorithm
+	 * @return</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_DKzrQPAmEeSZVKM2bAqEPw" name="dataCallback" type="_DIWNIPAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DKzrQfAmEeSZVKM2bAqEPw" name="algos" type="_DKb30PAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DKzrQvAmEeSZVKM2bAqEPw" name="step">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKzrQ_AmEeSZVKM2bAqEPw" name="problems">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DK05YPAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DKzrRPAmEeSZVKM2bAqEPw" name="algorithm"/>
+              <ownedParameter xmi:id="_DKzrRfAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKzrRvAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DK05YvAmEeSZVKM2bAqEPw" name="initAlgoData" method="_DLavSfAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DK1gcPAmEeSZVKM2bAqEPw" name="algorithms" type="_DKhXYfAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DK2HgPAmEeSZVKM2bAqEPw" type="_DKb30PAmEeSZVKM2bAqEPw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DK3VofAmEeSZVKM2bAqEPw" name="getAlgorithms" visibility="private" method="_DLavTPAmEeSZVKM2bAqEPw" raisedException="_DK2ukfAmEeSZVKM2bAqEPw">
+              <ownedComment xmi:id="_DLfnwPAmEeSZVKM2bAqEPw">
+                <body>@param algorithms
+	 *            Name of the algorithms, see getAlgorithms()
+	 * @throws IllegalArgumentException
+	 *             if the algorithm was not found</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_DK3VovAmEeSZVKM2bAqEPw" name="algorithms" type="_DKhXYfAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DK3Vo_AmEeSZVKM2bAqEPw" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DK3VpPAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_DLp_0fAmEeSZVKM2bAqEPw" name="" memberEnd="_DLp_0vAmEeSZVKM2bAqEPw _DLJCcfAmEeSZVKM2bAqEPw">
+            <ownedEnd xmi:id="_DLp_0vAmEeSZVKM2bAqEPw" name="" type="_DIfXEPAmEeSZVKM2bAqEPw" association="_DLp_0fAmEeSZVKM2bAqEPw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_DLrN8PAmEeSZVKM2bAqEPw" name="" memberEnd="_DLrN8fAmEeSZVKM2bAqEPw _DLKQkPAmEeSZVKM2bAqEPw">
+            <ownedEnd xmi:id="_DLrN8fAmEeSZVKM2bAqEPw" name="" type="_DIjBcPAmEeSZVKM2bAqEPw" association="_DLrN8PAmEeSZVKM2bAqEPw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_DLr1AfAmEeSZVKM2bAqEPw" name="" memberEnd="_DLr1AvAmEeSZVKM2bAqEPw _DLK3oPAmEeSZVKM2bAqEPw">
+            <ownedEnd xmi:id="_DLr1AvAmEeSZVKM2bAqEPw" name="" type="_DIjBcPAmEeSZVKM2bAqEPw" association="_DLr1AfAmEeSZVKM2bAqEPw"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_DF8ZYPAmEeSZVKM2bAqEPw" name="problemGenerators">
+          <packagedElement xmi:type="uml:Class" xmi:id="_DHAwYPAmEeSZVKM2bAqEPw" name="OrderedProblemGenerator">
+            <ownedAttribute xmi:id="_DK81MPAmEeSZVKM2bAqEPw" name="order" visibility="private" type="_DHHeEPAmEeSZVKM2bAqEPw"/>
+            <interfaceRealization xmi:id="_DKF5kPAmEeSZVKM2bAqEPw" client="_DHAwYPAmEeSZVKM2bAqEPw" supplier="_DIXbQPAmEeSZVKM2bAqEPw" contract="_DIXbQPAmEeSZVKM2bAqEPw"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLN68PAmEeSZVKM2bAqEPw" name="OrderedProblemGenerator" specification="_DKHHsPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLN68fAmEeSZVKM2bAqEPw" name="order" type="_DHHeEPAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLN68vAmEeSZVKM2bAqEPw" type="_DHAwYPAmEeSZVKM2bAqEPw" direction="return"/>
+              <language>java</language>
+              <body>this.order = order;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLN68_AmEeSZVKM2bAqEPw" name="createProblem" specification="_DHLIcPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLN69PAmEeSZVKM2bAqEPw" name="size">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLN69fAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLN69vAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>double start = 0;
+
+		double[] problem = new double[size];
+		for (int i = 0; i &lt; problem.length; i++) {
+			start = order.getNextValue(start);
+			problem[i] = start;
+		}
+
+		return problem;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_DHLIcPAmEeSZVKM2bAqEPw" name="createProblem" method="_DLN68_AmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DHLIcfAmEeSZVKM2bAqEPw" name="size">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DHRPEPAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DHRPEfAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DKHHsPAmEeSZVKM2bAqEPw" name="OrderedProblemGenerator" method="_DLN68PAmEeSZVKM2bAqEPw">
+              <eAnnotations xmi:id="_DKHHsvAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DKHHs_AmEeSZVKM2bAqEPw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DKHHsfAmEeSZVKM2bAqEPw" name="order" type="_DHHeEPAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DKHuwPAmEeSZVKM2bAqEPw" type="_DHAwYPAmEeSZVKM2bAqEPw" direction="return"/>
+            </ownedOperation>
+            <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_DHHeEPAmEeSZVKM2bAqEPw" name="Order">
+              <ownedAttribute xmi:id="_DK7AAPAmEeSZVKM2bAqEPw" name="differenceToNextValue" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_DHIsMPAmEeSZVKM2bAqEPw" name="Order" visibility="package" method="_DLMs0PAmEeSZVKM2bAqEPw">
+                <eAnnotations xmi:id="_DHJTQPAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DHJTQfAmEeSZVKM2bAqEPw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_DHIsMfAmEeSZVKM2bAqEPw" name="differenceToNextValue">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DHJTQvAmEeSZVKM2bAqEPw" type="_DHHeEPAmEeSZVKM2bAqEPw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DHJTQ_AmEeSZVKM2bAqEPw" name="getNextValue" method="_DLNT4vAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DHJTRPAmEeSZVKM2bAqEPw" name="oldValue">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DHJ6UPAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedLiteral xmi:id="_DHHeEfAmEeSZVKM2bAqEPw" name="ascending">
+                <specification xmi:type="uml:Expression" xmi:id="_DHHeEvAmEeSZVKM2bAqEPw">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_DLdLgPAmEeSZVKM2bAqEPw" value="+1"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_DHIFIPAmEeSZVKM2bAqEPw" name="descending">
+                <specification xmi:type="uml:Expression" xmi:id="_DHIFIfAmEeSZVKM2bAqEPw">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_DLdLgfAmEeSZVKM2bAqEPw" value="-1"/>
+                </specification>
+              </ownedLiteral>
+            </nestedClassifier>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DHUSYPAmEeSZVKM2bAqEPw" name="RandomProblemGenerator">
+            <ownedAttribute xmi:id="_DK9cQPAmEeSZVKM2bAqEPw" name="generator" visibility="private" type="_DKIV0PAmEeSZVKM2bAqEPw" association="_DLoKoPAmEeSZVKM2bAqEPw"/>
+            <interfaceRealization xmi:id="_DKI84fAmEeSZVKM2bAqEPw" client="_DHUSYPAmEeSZVKM2bAqEPw" supplier="_DIXbQPAmEeSZVKM2bAqEPw" contract="_DIXbQPAmEeSZVKM2bAqEPw"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLOiAPAmEeSZVKM2bAqEPw" name="RandomProblemGenerator" specification="_DKrIYPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLOiAfAmEeSZVKM2bAqEPw" name="generator" type="_DKIV0PAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DLOiAvAmEeSZVKM2bAqEPw" type="_DHUSYPAmEeSZVKM2bAqEPw" direction="return"/>
+              <language>java</language>
+              <body>super();
+		this.generator = generator;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLOiA_AmEeSZVKM2bAqEPw" name="createProblem" specification="_DHVggPAmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DLPJEPAmEeSZVKM2bAqEPw" name="size">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DLPJEfAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLPJEvAmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>double[] problem = new double[size];
+		for (int i = 0; i &lt; problem.length; i++) {
+			problem[i] = this.generator.nextValue();
+		}
+		return problem;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_DHVggPAmEeSZVKM2bAqEPw" name="createProblem" method="_DLOiA_AmEeSZVKM2bAqEPw">
+              <ownedParameter xmi:id="_DHVggfAmEeSZVKM2bAqEPw" name="size">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_DHVggvAmEeSZVKM2bAqEPw" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DHVgg_AmEeSZVKM2bAqEPw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DKrIYPAmEeSZVKM2bAqEPw" name="RandomProblemGenerator" method="_DLOiAPAmEeSZVKM2bAqEPw">
+              <eAnnotations xmi:id="_DKrIYvAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DKrIY_AmEeSZVKM2bAqEPw" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DKrIYfAmEeSZVKM2bAqEPw" name="generator" type="_DKIV0PAmEeSZVKM2bAqEPw"/>
+              <ownedParameter xmi:id="_DKrvcPAmEeSZVKM2bAqEPw" type="_DHUSYPAmEeSZVKM2bAqEPw" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_DLoKoPAmEeSZVKM2bAqEPw" name="" memberEnd="_DLoKofAmEeSZVKM2bAqEPw _DK9cQPAmEeSZVKM2bAqEPw">
+            <ownedEnd xmi:id="_DLoKofAmEeSZVKM2bAqEPw" name="" type="_DHUSYPAmEeSZVKM2bAqEPw" association="_DLoKoPAmEeSZVKM2bAqEPw"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_DF_csPAmEeSZVKM2bAqEPw" name="sort">
+          <packagedElement xmi:type="uml:Package" xmi:id="_DF_csvAmEeSZVKM2bAqEPw" name="interfaces">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_DHmmQPAmEeSZVKM2bAqEPw" name="ISortData">
+              <ownedOperation xmi:id="_DHqQoPAmEeSZVKM2bAqEPw" name="addComparison" isAbstract="true"/>
+              <ownedOperation xmi:id="_DHq3sPAmEeSZVKM2bAqEPw" name="addComparisons" isAbstract="true">
+                <ownedParameter xmi:id="_DHq3sfAmEeSZVKM2bAqEPw" name="comparisons">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DHq3svAmEeSZVKM2bAqEPw" name="addShift" isAbstract="true"/>
+              <ownedOperation xmi:id="_DHq3s_AmEeSZVKM2bAqEPw" name="addShifts" isAbstract="true">
+                <ownedParameter xmi:id="_DHrewPAmEeSZVKM2bAqEPw" name="shifts">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DHrewfAmEeSZVKM2bAqEPw" name="setTime" isAbstract="true">
+                <ownedParameter xmi:id="_DHrewvAmEeSZVKM2bAqEPw" name="time">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DHrew_AmEeSZVKM2bAqEPw" name="getComparisons" isAbstract="true">
+                <ownedParameter xmi:id="_DHuiEPAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DHvJIPAmEeSZVKM2bAqEPw" name="getShifts" isAbstract="true">
+                <ownedParameter xmi:id="_DHvJIfAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DHvJIvAmEeSZVKM2bAqEPw" name="getTime" isAbstract="true">
+                <ownedParameter xmi:id="_DHvJI_AmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_dOwVUPAmEeSZVKM2bAqEPw" name="ISortAlgorithm" isAbstract="true">
+              <ownedAttribute xmi:id="_DHfRgPAmEeSZVKM2bAqEPw" name="logger" visibility="package" isLeaf="true" isStatic="true" type="_DKKyEPAmEeSZVKM2bAqEPw" isReadOnly="true">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_DHfRgfAmEeSZVKM2bAqEPw" value="LoggerFactory.getLogger(ISortAlgorithm.class)"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dO5fQPAmEeSZVKM2bAqEPw" name="sort" specification="_DHfRgvAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_dO5fQfAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dO5fQvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>sortWithComparisonAndShiftMeasure(array, new SortDataMock());
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dO6GUPAmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure" specification="_DHgfofAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_dO6GUfAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dO6GUvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_dO6GU_AmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return sortWithComparisonAndShiftMeasure(array, new SortData());
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dO6GVPAmEeSZVKM2bAqEPw" name="sortWithMeasure" specification="_DHkxEPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_dO6GVfAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dO6GVvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_dO6GV_AmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>StopWatch stopWatch = new Slf4JStopWatch(logger, Slf4JStopWatch.TRACE_LEVEL);
+		ISortData data = sortWithComparisonAndShiftMeasure(array);
+		stopWatch.stop();
+		data.setTime(stopWatch.getElapsedTime());
+		return data;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DHfRgvAmEeSZVKM2bAqEPw" name="sort" method="_dO5fQPAmEeSZVKM2bAqEPw">
+                <eAnnotations xmi:id="_DHf4kfAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DHf4kvAmEeSZVKM2bAqEPw" key="defender"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_DHf4kPAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DHf4lPAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DHgfofAmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure" method="_dO6GUPAmEeSZVKM2bAqEPw">
+                <eAnnotations xmi:id="_DHhGsPAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DHhGsfAmEeSZVKM2bAqEPw" key="defender"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_DHgfovAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DHkKAPAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKPDgPAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DKPDgfAmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure" visibility="public" isAbstract="true">
+                <ownedParameter xmi:id="_DKPDgvAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKPqkvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKPqkPAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <ownedParameter xmi:id="_DKPqkfAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DHkxEPAmEeSZVKM2bAqEPw" name="sortWithMeasure" method="_dO6GVPAmEeSZVKM2bAqEPw">
+                <eAnnotations xmi:id="_DHkxEvAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DHkxE_AmEeSZVKM2bAqEPw" key="defender"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_DHkxEfAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DHlYIfAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKPqk_AmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_DGADwPAmEeSZVKM2bAqEPw" name="util">
+            <packagedElement xmi:type="uml:Class" xmi:id="_DH5hMPAmEeSZVKM2bAqEPw" name="SortData">
+              <ownedAttribute xmi:id="_DLAfkPAmEeSZVKM2bAqEPw" name="comparisons" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_DLAfkvAmEeSZVKM2bAqEPw" value="0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_DLBtsvAmEeSZVKM2bAqEPw" name="shifts" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_DLCUwfAmEeSZVKM2bAqEPw" value="0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_DLC70vAmEeSZVKM2bAqEPw" name="time">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_DLDi4PAmEeSZVKM2bAqEPw" value="0"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_DKVKIPAmEeSZVKM2bAqEPw" client="_DH5hMPAmEeSZVKM2bAqEPw" supplier="_DHmmQPAmEeSZVKM2bAqEPw" contract="_DHmmQPAmEeSZVKM2bAqEPw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLUBlfAmEeSZVKM2bAqEPw" name="toString" specification="_DH5hMfAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLUBlvAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;SortData [comparisons=&quot; + comparisons + &quot;, shifts=&quot; + shifts + &quot;, time=&quot; + time + &quot;]&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLVPsPAmEeSZVKM2bAqEPw" name="addComparison" specification="_DH7WYPAmEeSZVKM2bAqEPw">
+                <language>java</language>
+                <body>addComparisons(1);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLVPsfAmEeSZVKM2bAqEPw" name="addComparisons" specification="_DH79c_AmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLVPsvAmEeSZVKM2bAqEPw" name="comparisons">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.comparisons += comparisons;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLVPs_AmEeSZVKM2bAqEPw" name="addShift" specification="_DH8khPAmEeSZVKM2bAqEPw">
+                <language>java</language>
+                <body>addShifts(1);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLVPtPAmEeSZVKM2bAqEPw" name="addShifts" specification="_DIAO4PAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLVPtfAmEeSZVKM2bAqEPw" name="shifts">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.shifts += shifts;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DH5hMfAmEeSZVKM2bAqEPw" name="toString" method="_DLUBlfAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DH6IQPAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DH7WYPAmEeSZVKM2bAqEPw" name="addComparison" method="_DLVPsPAmEeSZVKM2bAqEPw">
+                <eAnnotations xmi:id="_DH7WYfAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DH7WYvAmEeSZVKM2bAqEPw" key="synchronized"/>
+                </eAnnotations>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DH79c_AmEeSZVKM2bAqEPw" name="addComparisons" method="_DLVPsfAmEeSZVKM2bAqEPw">
+                <eAnnotations xmi:id="_DH79dfAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DH8kgPAmEeSZVKM2bAqEPw" key="synchronized"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_DH79dPAmEeSZVKM2bAqEPw" name="comparisons">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DH8khPAmEeSZVKM2bAqEPw" name="addShift" method="_DLVPs_AmEeSZVKM2bAqEPw">
+                <eAnnotations xmi:id="_DH8khfAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DH9LkPAmEeSZVKM2bAqEPw" key="synchronized"/>
+                </eAnnotations>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DIAO4PAmEeSZVKM2bAqEPw" name="addShifts" method="_DLVPtPAmEeSZVKM2bAqEPw">
+                <eAnnotations xmi:id="_DIAO4vAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DIAO4_AmEeSZVKM2bAqEPw" key="synchronized"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_DIAO4fAmEeSZVKM2bAqEPw" name="shifts">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_DIDSMPAmEeSZVKM2bAqEPw" name="SortDataMock">
+              <interfaceRealization xmi:id="_DKW_UPAmEeSZVKM2bAqEPw" client="_DIDSMPAmEeSZVKM2bAqEPw" supplier="_DHmmQPAmEeSZVKM2bAqEPw" contract="_DHmmQPAmEeSZVKM2bAqEPw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLV2wPAmEeSZVKM2bAqEPw" name="getComparisons" specification="_DIG8k_AmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLV2wfAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return 0;</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLXr8PAmEeSZVKM2bAqEPw" name="getShifts" specification="_DIHjpPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLXr8fAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return 0;</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLXr8vAmEeSZVKM2bAqEPw" name="getTime" specification="_DIIKtPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLXr8_AmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return 0;</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DIDSMfAmEeSZVKM2bAqEPw" name="addComparison"/>
+              <ownedOperation xmi:id="_DIEgUPAmEeSZVKM2bAqEPw" name="addComparisons">
+                <ownedParameter xmi:id="_DIEgUfAmEeSZVKM2bAqEPw" name="comparisons">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DIFHYvAmEeSZVKM2bAqEPw" name="addShift"/>
+              <ownedOperation xmi:id="_DIFucvAmEeSZVKM2bAqEPw" name="addShifts">
+                <ownedParameter xmi:id="_DIFuc_AmEeSZVKM2bAqEPw" name="shifts">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DIGVg_AmEeSZVKM2bAqEPw" name="setTime">
+                <ownedParameter xmi:id="_DIGVhPAmEeSZVKM2bAqEPw" name="time">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DIG8k_AmEeSZVKM2bAqEPw" name="getComparisons" method="_DLV2wPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DIHjoPAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DIHjpPAmEeSZVKM2bAqEPw" name="getShifts" method="_DLXr8PAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DIIKsPAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DIIKtPAmEeSZVKM2bAqEPw" name="getTime" method="_DLXr8vAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DIIxwPAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_DINqQPAmEeSZVKM2bAqEPw" name="SortUtil">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLYTAPAmEeSZVKM2bAqEPw" name="swap" specification="_DIR7svAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLYTAfAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLYTAvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLYTA_AmEeSZVKM2bAqEPw" name="first">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLYTBPAmEeSZVKM2bAqEPw" name="secound">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>synchronized (array) {
+			double temp;
+	        temp = array[first]; 
+         array[first] = array[secound]; 
+         array[secound] = temp;
+			
+		}
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLYTBfAmEeSZVKM2bAqEPw" name="swap" specification="_DKXmYPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLYTBvAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLYTB_AmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLYTCPAmEeSZVKM2bAqEPw" name="first">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLYTCfAmEeSZVKM2bAqEPw" name="secound">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLYTCvAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <language>java</language>
+                <body>sortData.addShifts(3);
+		swap(array, first, secound);		
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DINqQfAmEeSZVKM2bAqEPw" name="SortUtil" visibility="private">
+                <eAnnotations xmi:id="_DIRUoPAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DIRUofAmEeSZVKM2bAqEPw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_DIR7sfAmEeSZVKM2bAqEPw" type="_DINqQPAmEeSZVKM2bAqEPw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DIR7svAmEeSZVKM2bAqEPw" name="swap" isStatic="true" method="_DLYTAPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DIR7s_AmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DISiwvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DISiwPAmEeSZVKM2bAqEPw" name="first">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DISiwfAmEeSZVKM2bAqEPw" name="secound">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DKXmYPAmEeSZVKM2bAqEPw" name="swap" isStatic="true" method="_DLYTBfAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DKXmYfAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKYNcvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKXmYvAmEeSZVKM2bAqEPw" name="first">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKYNcPAmEeSZVKM2bAqEPw" name="secound">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKYNcfAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_DGADwfAmEeSZVKM2bAqEPw" name="bubbleSort">
+            <packagedElement xmi:type="uml:Class" xmi:id="_DHcOMPAmEeSZVKM2bAqEPw" name="BubbleSort">
+              <generalization xmi:id="_f_APYPAmEeSZVKM2bAqEPw" general="_dOwVUPAmEeSZVKM2bAqEPw"/>
+              <ownedAttribute xmi:id="_DK-qYfAmEeSZVKM2bAqEPw" name="logger" visibility="private" isLeaf="true" isStatic="true" type="_DKKyEPAmEeSZVKM2bAqEPw" isReadOnly="true" association="_DLoxsfAmEeSZVKM2bAqEPw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_DK-qYvAmEeSZVKM2bAqEPw" value="LoggerFactory.getLogger(BubbleSort.class)"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLPJE_AmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure" specification="_DKMAMfAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLPJFPAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLPJFfAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLPJFvAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <ownedParameter xmi:id="_DLPJF_AmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>logger.debug(&quot;sort(array={}, sortData={}) called&quot;,array==null?&quot;null&quot;:&quot;notNull&quot;,sortData);
+		logger.trace(&quot;array={}&quot;,array);
+		
+		//sorting algorithm
+		for (int i = 1; i &lt; array.length; i++){
+			for (int j = 0; j &lt; array.length - i; j++){
+				sortData.addComparison();
+				if (array[j] > array[j + 1]) {
+					sortData.addShifts(3);
+					SortUtil.swap(array, j, j+1);
+				}
+			}
+		}
+		logger.debug(&quot;sortWithComparisonAndShiftMeasure(...) -> {}&quot;, sortData);
+		return sortData;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DKMAMfAmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure" method="_DLPJE_AmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DKMAMvAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKMnQvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKMAM_AmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <ownedParameter xmi:id="_DKMnQPAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_DLoxsfAmEeSZVKM2bAqEPw" name="" memberEnd="_DLoxsvAmEeSZVKM2bAqEPw _DK-qYfAmEeSZVKM2bAqEPw">
+              <ownedEnd xmi:id="_DLoxsvAmEeSZVKM2bAqEPw" name="" type="_DHcOMPAmEeSZVKM2bAqEPw" association="_DLoxsfAmEeSZVKM2bAqEPw"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_DGP7YPAmEeSZVKM2bAqEPw" name="quickSort">
+            <packagedElement xmi:type="uml:Class" xmi:id="_DHvwMPAmEeSZVKM2bAqEPw" name="SimpleQuickSort">
+              <ownedComment xmi:id="_DLdykPAmEeSZVKM2bAqEPw">
+                <body>@author Philip Yannick Benischke
+@author www.java-uni.de
+@see http://www.java-uni.de/index.php?Seite=86
+ *</body>
+              </ownedComment>
+              <generalization xmi:id="_lgBA4PAmEeSZVKM2bAqEPw" general="_dOwVUPAmEeSZVKM2bAqEPw"/>
+              <ownedAttribute xmi:id="_DK_RcPAmEeSZVKM2bAqEPw" name="LOGGER" visibility="private" isLeaf="true" isStatic="true" type="_DKKyEPAmEeSZVKM2bAqEPw" isReadOnly="true" association="_DLpYwfAmEeSZVKM2bAqEPw">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_DK_4gPAmEeSZVKM2bAqEPw" value="LoggerFactory.getLogger(SimpleQuickSort.class)"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLTagPAmEeSZVKM2bAqEPw" name="qSort" specification="_DKQ4sPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLTagfAmEeSZVKM2bAqEPw" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLTagvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLTag_AmEeSZVKM2bAqEPw" name="left">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLTahPAmEeSZVKM2bAqEPw" name="right">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLTahfAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <language>java</language>
+                <body>if (left &lt; right) {
+			int i = partition(x, left, right, sortData);
+			qSort(x, left, i - 1, sortData);
+			qSort(x, i + 1, right, sortData);
+		}
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLTahvAmEeSZVKM2bAqEPw" name="partition" specification="_DKSG0PAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLTah_AmEeSZVKM2bAqEPw" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLTaiPAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLTaifAmEeSZVKM2bAqEPw" name="left">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLTaivAmEeSZVKM2bAqEPw" name="right">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLTai_AmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <ownedParameter xmi:id="_DLTajPAmEeSZVKM2bAqEPw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>int i, j;
+		sortData.addShift();
+		double pivot = x[right];
+		i = left;
+		j = right - 1;
+		while (i &lt;= j) {
+			sortData.addComparison();
+			if (x[i] > pivot) {
+				// swap x[i] and x[j]
+				SortUtil.swap(x, i, j, sortData);
+				j--;
+			} else
+				i++;
+		}
+		// swap x[i] and x[right]
+		SortUtil.swap(x, i, right, sortData);
+
+		return i;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DLUBkPAmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure" specification="_DKTU8PAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DLUBkfAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLUBkvAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DLUBk_AmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <ownedParameter xmi:id="_DLUBlPAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>qSort(array, 0, array.length - 1, sortData);
+		LOGGER.debug(&quot;sortWithComparisonAndShiftMeasure(...) -> {}&quot;,sortData);
+		return sortData;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DKQ4sPAmEeSZVKM2bAqEPw" name="qSort" visibility="private" method="_DLTagPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DKQ4sfAmEeSZVKM2bAqEPw" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKRfwfAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKQ4svAmEeSZVKM2bAqEPw" name="left">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKQ4s_AmEeSZVKM2bAqEPw" name="right">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKQ4tPAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DKSG0PAmEeSZVKM2bAqEPw" name="partition" visibility="private" method="_DLTahvAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DKSG0fAmEeSZVKM2bAqEPw" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKSt4vAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKSG0vAmEeSZVKM2bAqEPw" name="left">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKSG0_AmEeSZVKM2bAqEPw" name="right">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKSG1PAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <ownedParameter xmi:id="_DKSt4PAmEeSZVKM2bAqEPw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DKTU8PAmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure" method="_DLUBkPAmEeSZVKM2bAqEPw">
+                <ownedParameter xmi:id="_DKTU8fAmEeSZVKM2bAqEPw" name="array">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DKT8AfAmEeSZVKM2bAqEPw" value="*"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_DKTU8vAmEeSZVKM2bAqEPw" name="sortData" type="_DHmmQPAmEeSZVKM2bAqEPw"/>
+                <ownedParameter xmi:id="_DKTU8_AmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_DLpYwfAmEeSZVKM2bAqEPw" name="" memberEnd="_DLpYwvAmEeSZVKM2bAqEPw _DK_RcPAmEeSZVKM2bAqEPw">
+              <ownedEnd xmi:id="_DLpYwvAmEeSZVKM2bAqEPw" name="" type="_DHvwMPAmEeSZVKM2bAqEPw" association="_DLpYwfAmEeSZVKM2bAqEPw"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DF9ngPAmEeSZVKM2bAqEPw" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DF9ngfAmEeSZVKM2bAqEPw" name="uncommons">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DF9ngvAmEeSZVKM2bAqEPw" name="maths">
+          <packagedElement xmi:type="uml:Package" xmi:id="_DF9ng_AmEeSZVKM2bAqEPw" name="number">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_DKIV0PAmEeSZVKM2bAqEPw" name="NumberGenerator"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DF_csfAmEeSZVKM2bAqEPw" name="slf4j">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_DKKyEPAmEeSZVKM2bAqEPw" name="Logger"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DKLZIPAmEeSZVKM2bAqEPw" name="LoggerFactory"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DGDHEPAmEeSZVKM2bAqEPw" name="perf4j">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DGDHEfAmEeSZVKM2bAqEPw" name="slf4j">
+          <packagedElement xmi:type="uml:Class" xmi:id="_DKOccfAmEeSZVKM2bAqEPw" name="Slf4JStopWatch"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DKN1YPAmEeSZVKM2bAqEPw" name="StopWatch"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DGhBIPAmEeSZVKM2bAqEPw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DGhBIfAmEeSZVKM2bAqEPw" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_DKY0gPAmEeSZVKM2bAqEPw" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DKapsPAmEeSZVKM2bAqEPw" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DKapsvAmEeSZVKM2bAqEPw" name="HashMap"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_DKb30PAmEeSZVKM2bAqEPw" name="Map"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DKeUEPAmEeSZVKM2bAqEPw" name="Arrays"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_DKe7IfAmEeSZVKM2bAqEPw" name="Collection"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DKgwUfAmEeSZVKM2bAqEPw" name="HashSet"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_DKhXYfAmEeSZVKM2bAqEPw" name="Set"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DK2ukPAmEeSZVKM2bAqEPw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_DK2ukfAmEeSZVKM2bAqEPw" name="IllegalArgumentException"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_CesMIPAmEeSZVKM2bAqEPw">
+      <eAnnotations xmi:id="_CesMIfAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_CeszMPAmEeSZVKM2bAqEPw" base_Package="_CToysPAmEeSZVKM2bAqEPw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Array xmi:id="_DHR2IPAmEeSZVKM2bAqEPw" base_Element="_DHLIcPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DHSdMPAmEeSZVKM2bAqEPw" base_Element="_DHLIcPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DHSdMfAmEeSZVKM2bAqEPw" base_Element="_DHLIcPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DHSdMvAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_DHX8wPAmEeSZVKM2bAqEPw" base_Element="_DHVggPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DHX8wfAmEeSZVKM2bAqEPw" base_Element="_DHVggPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DHYj0PAmEeSZVKM2bAqEPw" base_Element="_DHVggPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DHYj0fAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DH6IQfAmEeSZVKM2bAqEPw" base_Element="_DH5hMfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DH6IQvAmEeSZVKM2bAqEPw" base_Element="_DH5hMfAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DH6IQ_AmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DH79cPAmEeSZVKM2bAqEPw" base_Element="_DH7WYPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DH79cfAmEeSZVKM2bAqEPw" base_Element="_DH7WYPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DH79cvAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DH8kgfAmEeSZVKM2bAqEPw" base_Element="_DH79c_AmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DH8kgvAmEeSZVKM2bAqEPw" base_Element="_DH79c_AmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DH8kg_AmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DH9LkfAmEeSZVKM2bAqEPw" base_Element="_DH8khPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DH9LkvAmEeSZVKM2bAqEPw" base_Element="_DH8khPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DH9Lk_AmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIA18PAmEeSZVKM2bAqEPw" base_Element="_DIAO4PAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DIA18fAmEeSZVKM2bAqEPw" base_Element="_DIAO4PAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DIA18vAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DID5QPAmEeSZVKM2bAqEPw" base_Element="_DIDSMfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DID5QfAmEeSZVKM2bAqEPw" base_Element="_DIDSMfAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DID5QvAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIEgUvAmEeSZVKM2bAqEPw" base_Element="_DIEgUPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DIFHYPAmEeSZVKM2bAqEPw" base_Element="_DIEgUPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DIFHYfAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIFHY_AmEeSZVKM2bAqEPw" base_Element="_DIFHYvAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DIFucPAmEeSZVKM2bAqEPw" base_Element="_DIFHYvAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DIFucfAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIGVgPAmEeSZVKM2bAqEPw" base_Element="_DIFucvAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DIGVgfAmEeSZVKM2bAqEPw" base_Element="_DIFucvAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DIGVgvAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIG8kPAmEeSZVKM2bAqEPw" base_Element="_DIGVg_AmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DIG8kfAmEeSZVKM2bAqEPw" base_Element="_DIGVg_AmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DIG8kvAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIHjofAmEeSZVKM2bAqEPw" base_Element="_DIG8k_AmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DIHjovAmEeSZVKM2bAqEPw" base_Element="_DIG8k_AmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DIHjo_AmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIIKsfAmEeSZVKM2bAqEPw" base_Element="_DIHjpPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DIIKsvAmEeSZVKM2bAqEPw" base_Element="_DIHjpPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DIIKs_AmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIIxwfAmEeSZVKM2bAqEPw" base_Element="_DIIKtPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DIIxwvAmEeSZVKM2bAqEPw" base_Element="_DIIKtPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DIIxw_AmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIR7sPAmEeSZVKM2bAqEPw" base_Element="_DINqQfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Array xmi:id="_DIYpYPAmEeSZVKM2bAqEPw" base_Element="_DIYCUPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Array xmi:id="_DIeI8PAmEeSZVKM2bAqEPw" dimensions="2" base_Element="_DIYpYfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DIewAPAmEeSZVKM2bAqEPw" base_Element="_DIYpYfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKI84PAmEeSZVKM2bAqEPw" base_Element="_DKIV0PAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKKyEfAmEeSZVKM2bAqEPw" base_Element="_DKKyEPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKLZIfAmEeSZVKM2bAqEPw" base_Element="_DKLZIPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DKMnQfAmEeSZVKM2bAqEPw" base_Element="_DKMAMfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Array xmi:id="_DKMnQ_AmEeSZVKM2bAqEPw" base_Element="_DKMAMvAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DKNOUPAmEeSZVKM2bAqEPw" base_Element="_DKMAMfAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DKNOUfAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_DKOccPAmEeSZVKM2bAqEPw" base_Element="_DKN1YPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKOccvAmEeSZVKM2bAqEPw" base_Element="_DKOccfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DKRfwPAmEeSZVKM2bAqEPw" base_Element="_DKQ4sPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Array xmi:id="_DKRfwvAmEeSZVKM2bAqEPw" dimensions="1" base_Element="_DKQ4sfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DKSt4fAmEeSZVKM2bAqEPw" base_Element="_DKSG0PAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Array xmi:id="_DKSt4_AmEeSZVKM2bAqEPw" dimensions="1" base_Element="_DKSG0fAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DKT8APAmEeSZVKM2bAqEPw" base_Element="_DKTU8PAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Array xmi:id="_DKT8AvAmEeSZVKM2bAqEPw" base_Element="_DKTU8fAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Annotations xmi:id="_DKT8A_AmEeSZVKM2bAqEPw" base_Element="_DKTU8PAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DKT8BPAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_DKY0gfAmEeSZVKM2bAqEPw" base_Element="_DKY0gPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKapsfAmEeSZVKM2bAqEPw" base_Element="_DKapsPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKbQwPAmEeSZVKM2bAqEPw" base_Element="_DKapsvAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKce4PAmEeSZVKM2bAqEPw" base_Element="_DKb30PAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKe7IPAmEeSZVKM2bAqEPw" base_Element="_DKeUEPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKgwUPAmEeSZVKM2bAqEPw" base_Element="_DKe7IfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKhXYPAmEeSZVKM2bAqEPw" base_Element="_DKgwUfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DKhXYvAmEeSZVKM2bAqEPw" base_Element="_DKhXYfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DKsWgPAmEeSZVKM2bAqEPw" genericsValue="Double" base_Element="_DKrIYfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DKwA4PAmEeSZVKM2bAqEPw" genericsValue="ISortData" base_Element="_DKvZ0_AmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DKzEMPAmEeSZVKM2bAqEPw" genericsValue="String" base_Element="_DKx2EPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DK0SUPAmEeSZVKM2bAqEPw" genericsValue="ISortAlgorithm, SortProfile" base_Element="_DKzrQfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Array xmi:id="_DK05YfAmEeSZVKM2bAqEPw" dimensions="2" base_Element="_DKzrQ_AmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DK1gcfAmEeSZVKM2bAqEPw" genericsValue="ISortAlgorithm, SortProfile" base_Element="_DK05YvAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DK2HgfAmEeSZVKM2bAqEPw" genericsValue="String" base_Element="_DK1gcPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DK3VoPAmEeSZVKM2bAqEPw" base_Element="_DK2ukfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DK38sPAmEeSZVKM2bAqEPw" genericsValue="String" base_Element="_DK3VovAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DK7nEPAmEeSZVKM2bAqEPw" base_Element="_DK7AAPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DK81MfAmEeSZVKM2bAqEPw" base_Element="_DK81MPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DK-DUPAmEeSZVKM2bAqEPw" genericsValue="Double" base_Element="_DK9cQPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DK-qYPAmEeSZVKM2bAqEPw" base_Element="_DK9cQPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DLAfkfAmEeSZVKM2bAqEPw" base_Element="_DLAfkPAmEeSZVKM2bAqEPw">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_DLBGoPAmEeSZVKM2bAqEPw" name="getComparisons" method="_DLUooPAmEeSZVKM2bAqEPw">
+      <ownedParameter xmi:id="_DLBGofAmEeSZVKM2bAqEPw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Annotations xmi:id="_DLBtsPAmEeSZVKM2bAqEPw" base_Element="_DLBGoPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DLBtsfAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DLCUwPAmEeSZVKM2bAqEPw" base_Element="_DLBtsvAmEeSZVKM2bAqEPw">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_DLCUwvAmEeSZVKM2bAqEPw" name="getShifts" method="_DLUoovAmEeSZVKM2bAqEPw">
+      <ownedParameter xmi:id="_DLCUw_AmEeSZVKM2bAqEPw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Annotations xmi:id="_DLC70PAmEeSZVKM2bAqEPw" base_Element="_DLCUwvAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DLC70fAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DLC70_AmEeSZVKM2bAqEPw" base_Element="_DLC70vAmEeSZVKM2bAqEPw">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_DLF_IPAmEeSZVKM2bAqEPw" name="getTime" method="_DLUopPAmEeSZVKM2bAqEPw">
+      <ownedParameter xmi:id="_DLGmNPAmEeSZVKM2bAqEPw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_DLGmMPAmEeSZVKM2bAqEPw" name="setTime" method="_DLUopvAmEeSZVKM2bAqEPw">
+      <eAnnotations xmi:id="_DLGmMvAmEeSZVKM2bAqEPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_DLGmM_AmEeSZVKM2bAqEPw" key="synchronized"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_DLGmMfAmEeSZVKM2bAqEPw" name="time">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Annotations xmi:id="_DLHNQPAmEeSZVKM2bAqEPw" base_Element="_DLF_IPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DLHNQfAmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_DLHNQvAmEeSZVKM2bAqEPw" base_Element="_DLGmMPAmEeSZVKM2bAqEPw">
+    <annotations xmi:id="_DLHNQ_AmEeSZVKM2bAqEPw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DLJCcPAmEeSZVKM2bAqEPw" base_Element="_DLIbYPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Generics xmi:id="_DLJCcvAmEeSZVKM2bAqEPw" genericsValue="ISortData" base_Element="_DLJCcfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DLJpgfAmEeSZVKM2bAqEPw" base_Element="_DLJCcfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DLKQkvAmEeSZVKM2bAqEPw" base_Element="_DLKQkPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DLK3ovAmEeSZVKM2bAqEPw" base_Element="_DLK3oPAmEeSZVKM2bAqEPw"/>
+  <uml:OpaqueBehavior xmi:id="_DLMs0PAmEeSZVKM2bAqEPw" name="Order" specification="_DHIsMPAmEeSZVKM2bAqEPw">
+    <ownedParameter xmi:id="_DLNT4PAmEeSZVKM2bAqEPw" name="differenceToNextValue">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_DLNT4fAmEeSZVKM2bAqEPw" type="_DHHeEPAmEeSZVKM2bAqEPw" direction="return"/>
+    <language>java</language>
+    <body>this.differenceToNextValue = differenceToNextValue;
+		</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLNT4vAmEeSZVKM2bAqEPw" name="getNextValue" specification="_DHJTQ_AmEeSZVKM2bAqEPw">
+    <ownedParameter xmi:id="_DLNT4_AmEeSZVKM2bAqEPw" name="oldValue">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_DLNT5PAmEeSZVKM2bAqEPw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return oldValue + differenceToNextValue;
+		</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLPJGPAmEeSZVKM2bAqEPw" name="sort">
+    <ownedParameter xmi:id="_DLPwIPAmEeSZVKM2bAqEPw" name="array">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLPwIfAmEeSZVKM2bAqEPw" value="*"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>sortWithComparisonAndShiftMeasure(array, new SortDataMock());
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLPwIvAmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure">
+    <ownedParameter xmi:id="_DLSMYPAmEeSZVKM2bAqEPw" name="array">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLSMYfAmEeSZVKM2bAqEPw" value="*"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_DLSzcPAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return"/>
+    <language>java</language>
+    <body>return sortWithComparisonAndShiftMeasure(array, new SortData());
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLSzcfAmEeSZVKM2bAqEPw" name="sortWithMeasure">
+    <ownedParameter xmi:id="_DLSzcvAmEeSZVKM2bAqEPw" name="array">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLSzc_AmEeSZVKM2bAqEPw" value="*"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_DLSzdPAmEeSZVKM2bAqEPw" type="_DHmmQPAmEeSZVKM2bAqEPw" direction="return"/>
+    <language>java</language>
+    <body>StopWatch stopWatch = new Slf4JStopWatch(logger, Slf4JStopWatch.TRACE_LEVEL);
+		ISortData data = sortWithComparisonAndShiftMeasure(array);
+		stopWatch.stop();
+		data.setTime(stopWatch.getElapsedTime());
+		return data;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLUooPAmEeSZVKM2bAqEPw" name="getComparisons" specification="_DLBGoPAmEeSZVKM2bAqEPw">
+    <ownedParameter xmi:id="_DLUoofAmEeSZVKM2bAqEPw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return comparisons;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLUoovAmEeSZVKM2bAqEPw" name="getShifts" specification="_DLCUwvAmEeSZVKM2bAqEPw">
+    <ownedParameter xmi:id="_DLUoo_AmEeSZVKM2bAqEPw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return shifts;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLUopPAmEeSZVKM2bAqEPw" name="getTime" specification="_DLF_IPAmEeSZVKM2bAqEPw">
+    <ownedParameter xmi:id="_DLUopfAmEeSZVKM2bAqEPw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return time;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLUopvAmEeSZVKM2bAqEPw" name="setTime" specification="_DLGmMPAmEeSZVKM2bAqEPw">
+    <ownedParameter xmi:id="_DLUop_AmEeSZVKM2bAqEPw" name="time">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.time = time;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_DLY6EPAmEeSZVKM2bAqEPw" name="createProblems" specification="_DIYpYfAmEeSZVKM2bAqEPw">
+    <ownedParameter xmi:id="_DLY6EfAmEeSZVKM2bAqEPw" name="numberOfProblems">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_DLY6EvAmEeSZVKM2bAqEPw" name="sizeOfTheProblems">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_DLY6E_AmEeSZVKM2bAqEPw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DLY6FPAmEeSZVKM2bAqEPw" value="*"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>double[][] problems = new double[numberOfProblems][];
+		for (int i = 0; i &lt; problems.length; i++) {
+			problems[i] = createProblem(sizeOfTheProblems);
+		}
+		return problems;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_DLoxsPAmEeSZVKM2bAqEPw" base_Element="_DLoKoPAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DLpYwPAmEeSZVKM2bAqEPw" base_Element="_DLoxsfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DLp_0PAmEeSZVKM2bAqEPw" base_Element="_DLpYwfAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DLqm4PAmEeSZVKM2bAqEPw" base_Element="_DLp_0fAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DLr1APAmEeSZVKM2bAqEPw" base_Element="_DLrN8PAmEeSZVKM2bAqEPw"/>
+  <UMLLabProfile:Reference xmi:id="_DLscEPAmEeSZVKM2bAqEPw" base_Element="_DLr1AfAmEeSZVKM2bAqEPw"/>
+</xmi:XMI>

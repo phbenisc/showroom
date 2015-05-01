@@ -3,11 +3,11 @@ package uk.napierdevsoc.sort.bubbleSort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import uk.napierdevsoc.sort.interfaces.ISortAlgorithm;
+import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
 import uk.napierdevsoc.sort.interfaces.ISortData;
 import uk.napierdevsoc.sort.util.SortUtil;
 
-public class BubbleSort implements ISortAlgorithm {
+public class BubbleSort extends SortAlgorithm {
 
 	private static final Logger logger = LoggerFactory.getLogger(BubbleSort.class);
 

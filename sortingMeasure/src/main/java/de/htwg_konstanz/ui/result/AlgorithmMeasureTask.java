@@ -9,7 +9,7 @@ import java.util.stream.LongStream;
 
 import javafx.concurrent.Task;
 import javafx.scene.chart.XYChart.Data;
-import uk.napierdevsoc.sort.interfaces.ISortAlgorithm;
+import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
 import uk.napierdevsoc.sort.interfaces.ISortData;
 import uk.napierdevsoc.sortingAlgorithms.IAlgorithmDataCallback;
 import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
@@ -42,7 +42,7 @@ public class AlgorithmMeasureTask extends Task<Result> {
 			throw new IllegalArgumentException("the kombination of the parameters exceeds the max. array length!");
 
 		// get all Algorithms and initData
-		Map<ISortAlgorithm, SortProfile> algos = sortingManager.initAlgoData(algorithms);
+		Map<SortAlgorithm, SortProfile> algos = sortingManager.initAlgoData(algorithms);
 
 		for (int step = 1; step < numberOfSteps + 1; step++) {
 			updateProgress(step, numberOfSteps + 1);
@@ -50,7 +50,7 @@ public class AlgorithmMeasureTask extends Task<Result> {
 			double[][] problems = problemGenerator.createProblems(repetitions, numberOfStartElements);
 			// all algorithms solve the same problems
 			// iterate over algorithms
-			for (ISortAlgorithm algorithm : algos.keySet()) {
+			for (SortAlgorithm algorithm : algos.keySet()) {
 				addData(algorithm.getClass().getName(), problems[0].length, sortingManager.profileAlgorithm(dataCallback, algos, step, problems, algorithm));
 			}
 			numberOfStartElements += stepSize;

@@ -8,11 +8,11 @@ import org.slf4j.LoggerFactory;
 import uk.napierdevsoc.sort.util.SortData;
 import uk.napierdevsoc.sort.util.SortDataMock;
 
-public interface ISortAlgorithm {
+public abstract class SortAlgorithm {
 	
-	static final  Logger logger = LoggerFactory.getLogger(ISortAlgorithm.class);
+	static final  Logger logger = LoggerFactory.getLogger(SortAlgorithm.class);
 	
-	default void sort(double[] array){
+	public void sort(double[] array){
 		sortWithComparisonAndShiftMeasure(array, new SortDataMock());
 	}
 	
@@ -21,12 +21,12 @@ public interface ISortAlgorithm {
 	 * @param array array to Sort. the order of the array will be altered.
 	 * @return SortData to profile the efficiency of the used algorithm
 	 */
-	default ISortData sortWithComparisonAndShiftMeasure(double[] array){
+	public ISortData sortWithComparisonAndShiftMeasure(double[] array){
 		return sortWithComparisonAndShiftMeasure(array, new SortData());
 	}
-	ISortData sortWithComparisonAndShiftMeasure(double[] array, ISortData sortData);
+	public abstract ISortData sortWithComparisonAndShiftMeasure(double[] array, ISortData sortData);
 	
-	default ISortData sortWithMeasure(double[] array){
+	public ISortData sortWithMeasure(double[] array){
 		StopWatch stopWatch = new Slf4JStopWatch(logger, Slf4JStopWatch.TRACE_LEVEL);
 		ISortData data = sortWithComparisonAndShiftMeasure(array);
 		stopWatch.stop();

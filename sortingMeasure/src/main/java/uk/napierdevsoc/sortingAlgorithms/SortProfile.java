@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import uk.napierdevsoc.sort.interfaces.ISortAlgorithm;
+import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
 import uk.napierdevsoc.sort.interfaces.ISortData;
 
 public class SortProfile{
-	SortProfile(ISortAlgorithm algo) {
+	SortProfile(SortAlgorithm algo) {
 		nameOfAlgorithm = algo.getClass().getName();
 	}
 	public final String nameOfAlgorithm;
