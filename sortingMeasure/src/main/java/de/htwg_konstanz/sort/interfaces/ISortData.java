@@ -1,4 +1,4 @@
-package uk.napierdevsoc.sort.interfaces;
+package de.htwg_konstanz.sort.interfaces;
 
 public interface ISortData {
 

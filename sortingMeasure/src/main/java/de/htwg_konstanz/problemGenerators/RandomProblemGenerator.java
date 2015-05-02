@@ -1,8 +1,8 @@
-package uk.napierdevsoc.problemGenerators;
+package de.htwg_konstanz.problemGenerators;
 
 import org.uncommons.maths.number.NumberGenerator;
 
-import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
+import de.htwg_konstanz.sortingAlgorithms.IProblemGenerator;
 
 public class RandomProblemGenerator implements IProblemGenerator{
 	

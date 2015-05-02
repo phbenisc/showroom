@@ -1,4 +1,4 @@
-package uk.napierdevsoc.sortingAlgorithms;
+package de.htwg_konstanz.sortingAlgorithms;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -11,10 +11,10 @@ import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import uk.napierdevsoc.sort.bubbleSort.BubbleSort;
-import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
-import uk.napierdevsoc.sort.interfaces.ISortData;
-import uk.napierdevsoc.sort.quickSort.SimpleQuickSort;
+import de.htwg_konstanz.sort.bubbleSort.BubbleSort;
+import de.htwg_konstanz.sort.interfaces.ISortData;
+import de.htwg_konstanz.sort.interfaces.SortAlgorithm;
+import de.htwg_konstanz.sort.quickSort.SimpleQuickSort;
 
 public class SortingManager {
 

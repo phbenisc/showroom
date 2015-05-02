@@ -17,11 +17,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.uncommons.maths.number.NumberGenerator;
 
+import de.htwg_konstanz.problemGenerators.RandomProblemGenerator;
+import de.htwg_konstanz.sortingAlgorithms.IProblemGenerator;
 import de.htwg_konstanz.ui.configuration.IDistributionConfiguration;
 import de.htwg_konstanz.ui.configuration.IProblemGeneratorConfig;
 import de.htwg_konstanz.ui.configuration.distribution.DistributionManager;
-import uk.napierdevsoc.problemGenerators.RandomProblemGenerator;
-import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
 
 public class RandomProblemGeneratorController implements IProblemGeneratorConfig {
 	private static final Logger logger = LoggerFactory.getLogger(RandomProblemGeneratorController.class);

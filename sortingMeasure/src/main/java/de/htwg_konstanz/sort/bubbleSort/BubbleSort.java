@@ -1,11 +1,11 @@
-package uk.napierdevsoc.sort.bubbleSort;
+package de.htwg_konstanz.sort.bubbleSort;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
-import uk.napierdevsoc.sort.interfaces.ISortData;
-import uk.napierdevsoc.sort.util.SortUtil;
+import de.htwg_konstanz.sort.interfaces.ISortData;
+import de.htwg_konstanz.sort.interfaces.SortAlgorithm;
+import de.htwg_konstanz.sort.util.SortUtil;
 
 public class BubbleSort extends SortAlgorithm {
 

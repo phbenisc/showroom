@@ -9,12 +9,12 @@ import java.util.stream.LongStream;
 
 import javafx.concurrent.Task;
 import javafx.scene.chart.XYChart.Data;
-import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
-import uk.napierdevsoc.sort.interfaces.ISortData;
-import uk.napierdevsoc.sortingAlgorithms.IAlgorithmDataCallback;
-import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
-import uk.napierdevsoc.sortingAlgorithms.SortProfile;
-import uk.napierdevsoc.sortingAlgorithms.SortingManager;
+import de.htwg_konstanz.sort.interfaces.ISortData;
+import de.htwg_konstanz.sort.interfaces.SortAlgorithm;
+import de.htwg_konstanz.sortingAlgorithms.IAlgorithmDataCallback;
+import de.htwg_konstanz.sortingAlgorithms.IProblemGenerator;
+import de.htwg_konstanz.sortingAlgorithms.SortProfile;
+import de.htwg_konstanz.sortingAlgorithms.SortingManager;
 import de.htwg_konstanz.ui.configuration.ConfigurationModel;
 
 public class AlgorithmMeasureTask extends Task<Result> {

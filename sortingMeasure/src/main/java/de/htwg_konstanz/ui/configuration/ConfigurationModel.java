@@ -2,9 +2,9 @@ package de.htwg_konstanz.ui.configuration;
 
 import java.util.Set;
 
-import uk.napierdevsoc.problemGenerators.OrderedProblemGenerator;
-import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
-import uk.napierdevsoc.sortingAlgorithms.SortingManager;
+import de.htwg_konstanz.problemGenerators.OrderedProblemGenerator;
+import de.htwg_konstanz.sortingAlgorithms.IProblemGenerator;
+import de.htwg_konstanz.sortingAlgorithms.SortingManager;
 
 public class ConfigurationModel {
 	

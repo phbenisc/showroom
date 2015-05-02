@@ -1,12 +1,12 @@
-package uk.napierdevsoc.sort.interfaces;
+package de.htwg_konstanz.sort.interfaces;
 
 import org.perf4j.StopWatch;
 import org.perf4j.slf4j.Slf4JStopWatch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import uk.napierdevsoc.sort.util.SortData;
-import uk.napierdevsoc.sort.util.SortDataMock;
+import de.htwg_konstanz.sort.util.SortData;
+import de.htwg_konstanz.sort.util.SortDataMock;
 
 public abstract class SortAlgorithm {
 	

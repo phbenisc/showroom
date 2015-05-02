@@ -1,8 +1,8 @@
-package uk.napierdevsoc.sortingAlgorithms;
+package de.htwg_konstanz.sortingAlgorithms;
 
 import java.util.List;
 
-import uk.napierdevsoc.sort.interfaces.ISortData;
+import de.htwg_konstanz.sort.interfaces.ISortData;
 
 public interface IAlgorithmDataCallback {
 	

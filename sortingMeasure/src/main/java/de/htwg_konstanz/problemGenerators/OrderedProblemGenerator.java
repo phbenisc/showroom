@@ -1,6 +1,6 @@
-package uk.napierdevsoc.problemGenerators;
+package de.htwg_konstanz.problemGenerators;
 
-import uk.napierdevsoc.sortingAlgorithms.IProblemGenerator;
+import de.htwg_konstanz.sortingAlgorithms.IProblemGenerator;
 
 public class OrderedProblemGenerator implements IProblemGenerator {
 

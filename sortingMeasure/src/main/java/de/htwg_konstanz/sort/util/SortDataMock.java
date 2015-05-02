@@ -1,6 +1,6 @@
-package uk.napierdevsoc.sort.util;
+package de.htwg_konstanz.sort.util;
 
-import uk.napierdevsoc.sort.interfaces.ISortData;
+import de.htwg_konstanz.sort.interfaces.ISortData;
 
 public class SortDataMock implements ISortData{
 

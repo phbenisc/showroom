@@ -1,4 +1,4 @@
-package uk.napierdevsoc.sortingAlgorithms;
+package de.htwg_konstanz.sortingAlgorithms;
 
 public interface IProblemGenerator {
 	

@@ -1,12 +1,12 @@
-package uk.napierdevsoc.sortingAlgorithms;
+package de.htwg_konstanz.sortingAlgorithms;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import uk.napierdevsoc.sort.interfaces.SortAlgorithm;
-import uk.napierdevsoc.sort.interfaces.ISortData;
+import de.htwg_konstanz.sort.interfaces.ISortData;
+import de.htwg_konstanz.sort.interfaces.SortAlgorithm;
 
 public class SortProfile{
 	SortProfile(SortAlgorithm algo) {
