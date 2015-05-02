@@ -14,6 +14,7 @@ import org.slf4j.LoggerFactory;
 import de.htwg_konstanz.sort.bubbleSort.BubbleSort;
 import de.htwg_konstanz.sort.interfaces.ISortData;
 import de.htwg_konstanz.sort.interfaces.SortAlgorithm;
+import de.htwg_konstanz.sort.mergeSort.SimpleMergeSort;
 import de.htwg_konstanz.sort.quickSort.SimpleQuickSort;
 
 public class SortingManager {
@@ -24,6 +25,7 @@ public class SortingManager {
 	public SortingManager() {
 		addAlgorithm(new BubbleSort());
 		addAlgorithm(new SimpleQuickSort());
+		addAlgorithm(new SimpleMergeSort());
 	}
 
 	public boolean exceedsMaxArraySize(int numberOfStartElements, int numberOfSteps, int stepSize) {

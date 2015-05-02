@@ -1,6 +1,7 @@
 package de.htwg_konstanz.sort
 
 import de.htwg_konstanz.sort.interfaces.*;
+import de.htwg_konstanz.sort.mergeSort.SimpleMergeSort
 import de.htwg_konstanz.sort.bubbleSort.*;
 import de.htwg_konstanz.sort.quickSort.*;
 import spock.lang.*
@@ -26,7 +27,7 @@ class SortAlgorithmTest extends Specification{
 			doubleArray = null
 		
 		where:
-			algo << [new BubbleSort(), new SimpleQuickSort()]					
+			algo << [new BubbleSort(), new SimpleQuickSort(), new SimpleMergeSort()]					
 	}
 	
 
