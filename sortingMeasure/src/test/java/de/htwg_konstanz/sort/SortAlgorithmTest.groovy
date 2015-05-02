@@ -8,8 +8,8 @@ import spock.lang.*
 class SortAlgorithmTest extends Specification{
 	
 	
-	
-	def "array is sorted"(SortAlgorithm algo){
+	@Unroll
+	def "array is sorted and measured"(SortAlgorithm algo){
 		double[] doubleArray
 		
 		setup:
@@ -41,8 +41,7 @@ class SortAlgorithmTest extends Specification{
 	
 	
 	
-	def isSorted(double[] array){
-		
+	def isSorted(double[] array){		
 		//no array
 		if(array == null)
 			return false
