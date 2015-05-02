@@ -92,6 +92,7 @@
 						<useFile>false</useFile>
 						<includes>
 							<include>**/*Spec.java</include>
+							<include>**/*Test.groovy</include>
 						</includes>
 					</configuration>
 				</plugin>
