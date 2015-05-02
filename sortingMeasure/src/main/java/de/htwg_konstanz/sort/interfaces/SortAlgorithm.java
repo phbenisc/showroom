@@ -34,7 +34,7 @@ public abstract class SortAlgorithm {
 	
 	public ISortData sortWithMeasure(double[] array){
 		//get Stopwatch
-		StopWatch stopWatch = new Slf4JStopWatch(logger, Slf4JStopWatch.TRACE_LEVEL);
+		StopWatch stopWatch = new Slf4JStopWatch(logger, Slf4JStopWatch.INFO_LEVEL);
 		//sort 
 		ISortData data = sortWithComparisonAndShiftMeasure(array);
 		//stop 
