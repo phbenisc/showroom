@@ -1,6 +1,6 @@
 package de.htwg_konstanz.ui.configuration;
 
-import de.htwg_konstanz.sortingAlgorithms.IProblemGenerator;
+import de.htwg_konstanz.sort.manager.IProblemGenerator;
 import de.htwg_konstanz.ui.main.IController;
 
 public interface IProblemGeneratorConfig extends IController{

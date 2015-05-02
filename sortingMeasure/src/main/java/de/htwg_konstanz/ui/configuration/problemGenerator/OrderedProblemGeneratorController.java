@@ -12,8 +12,8 @@ import javafx.scene.layout.HBox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.htwg_konstanz.problemGenerators.OrderedProblemGenerator;
-import de.htwg_konstanz.sortingAlgorithms.IProblemGenerator;
+import de.htwg_konstanz.sort.manager.IProblemGenerator;
+import de.htwg_konstanz.sort.problemGenerators.OrderedProblemGenerator;
 import de.htwg_konstanz.ui.configuration.IProblemGeneratorConfig;
 
 public class OrderedProblemGeneratorController implements IProblemGeneratorConfig{

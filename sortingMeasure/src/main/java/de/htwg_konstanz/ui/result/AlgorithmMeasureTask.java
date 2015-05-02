@@ -11,10 +11,10 @@ import javafx.concurrent.Task;
 import javafx.scene.chart.XYChart.Data;
 import de.htwg_konstanz.sort.interfaces.ISortData;
 import de.htwg_konstanz.sort.interfaces.SortAlgorithm;
-import de.htwg_konstanz.sortingAlgorithms.IAlgorithmDataCallback;
-import de.htwg_konstanz.sortingAlgorithms.IProblemGenerator;
-import de.htwg_konstanz.sortingAlgorithms.SortProfile;
-import de.htwg_konstanz.sortingAlgorithms.SortingManager;
+import de.htwg_konstanz.sort.manager.IAlgorithmDataCallback;
+import de.htwg_konstanz.sort.manager.IProblemGenerator;
+import de.htwg_konstanz.sort.manager.SortProfile;
+import de.htwg_konstanz.sort.manager.SortingManager;
 import de.htwg_konstanz.ui.configuration.ConfigurationModel;
 
 public class AlgorithmMeasureTask extends Task<Result> {

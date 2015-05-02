@@ -28,7 +28,7 @@ import javafx.util.StringConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.htwg_konstanz.sortingAlgorithms.SortingManager;
+import de.htwg_konstanz.sort.manager.SortingManager;
 import de.htwg_konstanz.ui.configuration.problemGenerator.ProblemGeneratorManager;
 import de.htwg_konstanz.ui.main.IController;
 import de.htwg_konstanz.ui.main.TabController;
