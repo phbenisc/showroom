@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_CVPVMPAmEeSZVKM2bAqEPw">
+  <modelElement href="sortingMeasure.uml#_DF1EoPAmEeSZVKM2bAqEPw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Fx96wPAmEeSZVKM2bAqEPw" source="_Fyh7cPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLp_0fAmEeSZVKM2bAqEPw"/>
+    <stereotypes xmi:id="_FydC8fAmEeSZVKM2bAqEPw" name="Reference">
+      <modelElement href="sortingMeasure.uml#_DLqm4PAmEeSZVKM2bAqEPw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FyamsPAmEeSZVKM2bAqEPw" text=""/>
+    <sourceRole xmi:id="_Fycb4PAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="">
+      <modelElement href="sortingMeasure.uml#_DLp_0vAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_FyeREPAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_FydqAPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FydC8PAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="sortingData" navigable="true">
+      <modelElement href="sortingMeasure.uml#_DLJCcfAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_Fye4I_AmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_Fye4IvAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <qualifierHelper xmi:id="_Fye4IPAmEeSZVKM2bAqEPw">
+        <qualifiers xmi:id="_Fye4IfAmEeSZVKM2bAqEPw">
+          <modelElement href="sortingMeasure.uml#_DLJpgvAmEeSZVKM2bAqEPw"/>
+          <visibility xmi:id="_FyffM_AmEeSZVKM2bAqEPw" label="+"/>
+          <cardinality xmi:id="_FyffNPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+          <type xmi:id="_FyffMvAmEeSZVKM2bAqEPw" name="int">
+            <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </type>
+        </qualifiers>
+      </qualifierHelper>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Fy9ZQPAmEeSZVKM2bAqEPw" sourceAnchor="0.0,144.0" targetAnchor="613.0,96.0" source="_FzchcPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLrN8PAmEeSZVKM2bAqEPw"/>
+    <stereotypes xmi:id="_FzUlovAmEeSZVKM2bAqEPw" name="Reference">
+      <modelElement href="sortingMeasure.uml#_DLr1APAmEeSZVKM2bAqEPw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FzT-kPAmEeSZVKM2bAqEPw" text="">
+      <visualProperties xmi:id="_GTM_kPAmEeSZVKM2bAqEPw" position="21.0,-11.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_FzUloPAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="">
+      <modelElement href="sortingMeasure.uml#_DLrN8fAmEeSZVKM2bAqEPw"/>
+      <visualProperties xmi:id="_GTJVMPAmEeSZVKM2bAqEPw" position="-19.5,10.5"/>
+      <visibility xmi:id="_FzVzwfAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_FzVzwPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FzUlofAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="algorithms" navigable="true">
+      <modelElement href="sortingMeasure.uml#_DLKQkPAmEeSZVKM2bAqEPw"/>
+      <visualProperties xmi:id="_GTM_kfAmEeSZVKM2bAqEPw" position="5.5,-67.5"/>
+      <stereotypes xmi:id="_dPiYcPAmEeSZVKM2bAqEPw" name="LegacyStyledElement"/>
+      <visibility xmi:id="_FzWa0vAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_FzWa0fAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <qualifierHelper xmi:id="_FzVzwvAmEeSZVKM2bAqEPw">
+        <qualifiers xmi:id="_FzWa0PAmEeSZVKM2bAqEPw">
+          <modelElement href="sortingMeasure.uml#_DLKQk_AmEeSZVKM2bAqEPw"/>
+          <visibility xmi:id="_FzXB4fAmEeSZVKM2bAqEPw" label="+"/>
+          <cardinality xmi:id="_FzXB4vAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+          <type xmi:id="_FzXB4PAmEeSZVKM2bAqEPw" name="String">
+            <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </type>
+        </qualifiers>
+      </qualifierHelper>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FzKNkPAmEeSZVKM2bAqEPw" targetItem="_FzchrfAmEeSZVKM2bAqEPw" sourceItem="_FzI_cPAmEeSZVKM2bAqEPw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_FzTXgPAmEeSZVKM2bAqEPw" targetItem="_FzchwvAmEeSZVKM2bAqEPw" sourceItem="_FzNQ4PAmEeSZVKM2bAqEPw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_FzbTUPAmEeSZVKM2bAqEPw" source="_FzchcPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLr1AfAmEeSZVKM2bAqEPw"/>
+    <stereotypes xmi:id="_FzbTUfAmEeSZVKM2bAqEPw" name="Reference">
+      <modelElement href="sortingMeasure.uml#_DLscEPAmEeSZVKM2bAqEPw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_FzbTUvAmEeSZVKM2bAqEPw" text=""/>
+    <sourceRole xmi:id="_FzbTU_AmEeSZVKM2bAqEPw" aggregationKind="NONE" name="">
+      <modelElement href="sortingMeasure.uml#_DLr1AvAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_FzbTVPAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_FzbTVfAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_FzbTVvAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="logger" navigable="true">
+      <modelElement href="sortingMeasure.uml#_DLK3oPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_FzbTV_AmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_FzbTWPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Fzp80PAmEeSZVKM2bAqEPw" sourceAnchor="255.0,0.0" targetAnchor="286.0,112.0" dashed="true" superClass="_FxHmMPAmEeSZVKM2bAqEPw" subClass="_FztAIPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DKF5kPAmEeSZVKM2bAqEPw"/>
+    <bendpoints xmi:id="_GTCngPAmEeSZVKM2bAqEPw" sourceY="-31" targetX="-26" targetY="35"/>
+    <bendpoints xmi:id="_GTFq0PAmEeSZVKM2bAqEPw" sourceX="26" sourceY="-31" targetY="35"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_F0o0QPAmEeSZVKM2bAqEPw" sourceAnchor="309.0,0.0" targetAnchor="286.0,112.0" dashed="true" superClass="_FxHmMPAmEeSZVKM2bAqEPw" subClass="_F0xXIPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DKI84fAmEeSZVKM2bAqEPw"/>
+    <bendpoints xmi:id="_GTGR4PAmEeSZVKM2bAqEPw" sourceY="-18" targetX="559" targetY="35"/>
+    <bendpoints xmi:id="_GTG48PAmEeSZVKM2bAqEPw" sourceX="-559" sourceY="-18" targetY="35"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_F0vh8PAmEeSZVKM2bAqEPw" source="_F0xXIPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLoKoPAmEeSZVKM2bAqEPw"/>
+    <stereotypes xmi:id="_F0vh8fAmEeSZVKM2bAqEPw" name="Reference">
+      <modelElement href="sortingMeasure.uml#_DLoxsPAmEeSZVKM2bAqEPw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_F0wJAPAmEeSZVKM2bAqEPw" text=""/>
+    <sourceRole xmi:id="_F0wJAfAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="">
+      <modelElement href="sortingMeasure.uml#_DLoKofAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F0wJAvAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_F0wJA_AmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_F0wJBPAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="generator" navigable="true">
+      <modelElement href="sortingMeasure.uml#_DK9cQPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F0wJBfAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_F0wJBvAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_F4v4MPAmEeSZVKM2bAqEPw" sourceAnchor="157.0,0.0" targetAnchor="143.0,256.0" dashed="true" superClass="_F2w7MPAmEeSZVKM2bAqEPw" subClass="_F5MkIPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DKVKIPAmEeSZVKM2bAqEPw"/>
+    <bendpoints xmi:id="_GTG48fAmEeSZVKM2bAqEPw" sourceY="-36" targetX="-26" targetY="28"/>
+    <bendpoints xmi:id="_GTG48vAmEeSZVKM2bAqEPw" sourceX="26" sourceY="-36" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_F55uwPAmEeSZVKM2bAqEPw" sourceAnchor="157.0,0.0" targetAnchor="143.0,256.0" dashed="true" superClass="_F2w7MPAmEeSZVKM2bAqEPw" subClass="_F5_1YPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DKW_UPAmEeSZVKM2bAqEPw"/>
+    <bendpoints xmi:id="_GTHgAPAmEeSZVKM2bAqEPw" sourceY="-13" targetX="325" targetY="28"/>
+    <bendpoints xmi:id="_GTHgAfAmEeSZVKM2bAqEPw" sourceX="-325" sourceY="-13" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_F9LFMPAmEeSZVKM2bAqEPw" source="_F9zXUPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLoxsfAmEeSZVKM2bAqEPw"/>
+    <stereotypes xmi:id="_F9yJMfAmEeSZVKM2bAqEPw" name="Reference">
+      <modelElement href="sortingMeasure.uml#_DLpYwPAmEeSZVKM2bAqEPw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_F9xiIPAmEeSZVKM2bAqEPw" text=""/>
+    <sourceRole xmi:id="_F9xiIfAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="">
+      <modelElement href="sortingMeasure.uml#_DLoxsvAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F9ywQfAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_F9ywQPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_F9yJMPAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="logger" navigable="true">
+      <modelElement href="sortingMeasure.uml#_DK-qYfAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F9ywQ_AmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_F9ywQvAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_F_VBUPAmEeSZVKM2bAqEPw" targetItem="_GAZYUPAmEeSZVKM2bAqEPw" sourceItem="_F_CGYPAmEeSZVKM2bAqEPw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_F_xGMPAmEeSZVKM2bAqEPw" source="_GAZYUPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLpYwfAmEeSZVKM2bAqEPw"/>
+    <stereotypes xmi:id="_GAQOYfAmEeSZVKM2bAqEPw" name="Reference">
+      <modelElement href="sortingMeasure.uml#_DLp_0PAmEeSZVKM2bAqEPw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_GAPnUPAmEeSZVKM2bAqEPw" text=""/>
+    <sourceRole xmi:id="_GAPnUfAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="">
+      <modelElement href="sortingMeasure.uml#_DLpYwvAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_GAW8EfAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_GAW8EPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_GAQOYPAmEeSZVKM2bAqEPw" aggregationKind="NONE" name="LOGGER" navigable="true">
+      <modelElement href="sortingMeasure.uml#_DK_RcPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_GAYxQfAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_GAYxQPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FzI_cPAmEeSZVKM2bAqEPw" sourceConnectionVisual="_FzKNkPAmEeSZVKM2bAqEPw" text="@param dataCallback&#xA;&#x9; * @param algos&#xA;&#x9; * @param step&#xA;&#x9; * @param problems&#xA;&#x9; * @param algorithm&#xA;&#x9; * @return" item="_FzchrfAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLfAsPAmEeSZVKM2bAqEPw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_FzNQ4PAmEeSZVKM2bAqEPw" sourceConnectionVisual="_FzTXgPAmEeSZVKM2bAqEPw" text="@param algorithms&#xA;&#x9; *            Name of the algorithms, see getAlgorithms()&#xA;&#x9; * @throws IllegalArgumentException&#xA;&#x9; *             if the algorithm was not found" item="_FzchwvAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLfnwPAmEeSZVKM2bAqEPw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_F_CGYPAmEeSZVKM2bAqEPw" sourceConnectionVisual="_F_VBUPAmEeSZVKM2bAqEPw" text="@author Philip Yannick Benischke&#xA;@author www.java-uni.de&#xA;@see http://www.java-uni.de/index.php?Seite=86&#xA; *" item="_GAZYUPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DLdykPAmEeSZVKM2bAqEPw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Fs_7MPAmEeSZVKM2bAqEPw" name="IAlgorithmDataCallback">
+    <modelElement href="sortingMeasure.uml#_DIWNIPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_Fs_7MfAmEeSZVKM2bAqEPw" position="10.0,1804.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Fs_7MvAmEeSZVKM2bAqEPw" label="+"/>
+    <operations xmi:id="_Fs_7M_AmEeSZVKM2bAqEPw" name="callback">
+      <modelElement href="sortingMeasure.uml#_DKvZ0PAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_Fs_7NPAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_Fs_7NfAmEeSZVKM2bAqEPw" name="name">
+        <modelElement href="sortingMeasure.uml#_DKvZ0fAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fs_7NvAmEeSZVKM2bAqEPw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Fs_7N_AmEeSZVKM2bAqEPw" name="problemSize">
+        <modelElement href="sortingMeasure.uml#_DKvZ0vAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fs_7OPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Fs_7OfAmEeSZVKM2bAqEPw" name="list">
+        <modelElement href="sortingMeasure.uml#_DKvZ0_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fs_7OvAmEeSZVKM2bAqEPw" name="List">
+          <modelElement href="sortingMeasure.uml#_DKY0gPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Fyh7cPAmEeSZVKM2bAqEPw" name="SortProfile" associationsOut="_Fx96wPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DIfXEPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_Fyh7cfAmEeSZVKM2bAqEPw" position="17.0,1569.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Fyh7cvAmEeSZVKM2bAqEPw" label="+"/>
+    <attributes xmi:id="_Fyh7c_AmEeSZVKM2bAqEPw" name="nameOfAlgorithm">
+      <modelElement href="sortingMeasure.uml#_DLIbYPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_Fyh7dPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DLJCcPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_Fyh7dfAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_Fyh7dvAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_Fyh7d_AmEeSZVKM2bAqEPw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Fyh7ePAmEeSZVKM2bAqEPw" defaultValue="new HashMap&lt;>()" name="sortingData">
+      <modelElement href="sortingMeasure.uml#_DLJCcfAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_Fyh7efAmEeSZVKM2bAqEPw" name="Generics">
+        <modelElement href="sortingMeasure.uml#_DLJCcvAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Fyh7evAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DLJpgfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_Fyh7e_AmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_Fyh7fPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_FyjJkPAmEeSZVKM2bAqEPw" name="List">
+        <modelElement href="sortingMeasure.uml#_DKY0gPAmEeSZVKM2bAqEPw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FyjJkfAmEeSZVKM2bAqEPw" name="getSortDataFromIteration">
+      <modelElement href="sortingMeasure.uml#_DIglMPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_FyjJkvAmEeSZVKM2bAqEPw" label="~"/>
+      <outParameters xmi:id="_FyjJk_AmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIhMQPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FyjJlPAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FyjJlfAmEeSZVKM2bAqEPw" name="iteration">
+        <modelElement href="sortingMeasure.uml#_DIglMfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FyjJlvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FyjJl_AmEeSZVKM2bAqEPw" name="SortProfile">
+      <modelElement href="sortingMeasure.uml#_DKce4fAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_FyjJmPAmEeSZVKM2bAqEPw" keyword="create"/>
+      <visibility xmi:id="_FyjJmfAmEeSZVKM2bAqEPw" label="~"/>
+      <outParameters xmi:id="_FyjJmvAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DKce5fAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FyjJm_AmEeSZVKM2bAqEPw" name="SortProfile">
+          <modelElement href="sortingMeasure.uml#_DIfXEPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FyjwoPAmEeSZVKM2bAqEPw" name="algo">
+        <modelElement href="sortingMeasure.uml#_DKce4vAmEeSZVKM2bAqEPw"/>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FyjwovAmEeSZVKM2bAqEPw" name="addSortData">
+      <modelElement href="sortingMeasure.uml#_DKdF8PAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_Fyjwo_AmEeSZVKM2bAqEPw" label="~"/>
+      <parameters xmi:id="_FyjwpPAmEeSZVKM2bAqEPw" name="step">
+        <modelElement href="sortingMeasure.uml#_DKdF8fAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FyjwpfAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FyjwpvAmEeSZVKM2bAqEPw" name="sortData">
+        <modelElement href="sortingMeasure.uml#_DKdF8vAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fyjwp_AmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FzchcPAmEeSZVKM2bAqEPw" name="SortingManager" associationsOut="_Fy9ZQPAmEeSZVKM2bAqEPw _FzbTUPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DIjBcPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_FzchcfAmEeSZVKM2bAqEPw" position="904.0,664.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FzchcvAmEeSZVKM2bAqEPw" label="+"/>
+    <attributes xmi:id="_Fzchc_AmEeSZVKM2bAqEPw" defaultValue="new HashMap&lt;>()" name="algorithms">
+      <modelElement href="sortingMeasure.uml#_DLKQkPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_FzchdPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DLKQkvAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_FzchdfAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_FzchdvAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+    </attributes>
+    <attributes xmi:id="_FzchePAmEeSZVKM2bAqEPw" defaultValue="LoggerFactory.getLogger(SortingManager.class)" name="logger">
+      <modelElement href="sortingMeasure.uml#_DLK3oPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_FzchefAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DLK3ovAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_FzchevAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_Fzche_AmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_FzchfPAmEeSZVKM2bAqEPw" name="Logger">
+        <modelElement href="sortingMeasure.uml#_DKKyEPAmEeSZVKM2bAqEPw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FzchffAmEeSZVKM2bAqEPw" name="SortingManager">
+      <modelElement href="sortingMeasure.uml#_DIjogPAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_FzchfvAmEeSZVKM2bAqEPw" keyword="create"/>
+      <visibility xmi:id="_Fzchf_AmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FzchgPAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIkPkvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchgfAmEeSZVKM2bAqEPw" name="SortingManager">
+          <modelElement href="sortingMeasure.uml#_DIjBcPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FzchgvAmEeSZVKM2bAqEPw" name="exceedsMaxArraySize">
+      <modelElement href="sortingMeasure.uml#_DIk2oPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_Fzchg_AmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FzchhPAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIk2pPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchhfAmEeSZVKM2bAqEPw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FzchhvAmEeSZVKM2bAqEPw" name="numberOfStartElements">
+        <modelElement href="sortingMeasure.uml#_DIk2ofAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fzchh_AmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FzchiPAmEeSZVKM2bAqEPw" name="numberOfSteps">
+        <modelElement href="sortingMeasure.uml#_DIk2ovAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchifAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FzchivAmEeSZVKM2bAqEPw" name="stepSize">
+        <modelElement href="sortingMeasure.uml#_DIk2o_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fzchi_AmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FzchjPAmEeSZVKM2bAqEPw" name="getAlgorithms">
+      <modelElement href="sortingMeasure.uml#_DIpIEPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_FzchjfAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FzchjvAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIpvIPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fzchj_AmEeSZVKM2bAqEPw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FzchkPAmEeSZVKM2bAqEPw" name="getAllProblemGenerators">
+      <modelElement href="sortingMeasure.uml#_DIqWMPAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_FzchkfAmEeSZVKM2bAqEPw" keyword="generic_container"/>
+      <visibility xmi:id="_FzchkvAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_Fzchk_AmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIqWMfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchlPAmEeSZVKM2bAqEPw" name="IProblemGenerator">
+          <modelElement href="sortingMeasure.uml#_DIXbQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_FzchlfAmEeSZVKM2bAqEPw" name="addAlgorithm">
+      <modelElement href="sortingMeasure.uml#_DKjMkPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_FzchlvAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_Fzchl_AmEeSZVKM2bAqEPw" name="algorithm">
+        <modelElement href="sortingMeasure.uml#_DKjMkfAmEeSZVKM2bAqEPw"/>
+        <keywords xmi:id="_FzchmPAmEeSZVKM2bAqEPw" keyword="final"/>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FzchmvAmEeSZVKM2bAqEPw" name="profileAlgorithms">
+      <modelElement href="sortingMeasure.uml#_DKxPAPAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_Fzchm_AmEeSZVKM2bAqEPw" keyword="generic_container"/>
+      <visibility xmi:id="_FzchnPAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FzchnfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DKx2F_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchnvAmEeSZVKM2bAqEPw" name="SortProfile">
+          <modelElement href="sortingMeasure.uml#_DIfXEPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Fzchn_AmEeSZVKM2bAqEPw" name="algorithms">
+        <modelElement href="sortingMeasure.uml#_DKx2EPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchoPAmEeSZVKM2bAqEPw" name="Set">
+          <modelElement href="sortingMeasure.uml#_DKhXYfAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FzchofAmEeSZVKM2bAqEPw" name="dataCallback">
+        <modelElement href="sortingMeasure.uml#_DKx2EfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchovAmEeSZVKM2bAqEPw" name="IAlgorithmDataCallback">
+          <modelElement href="sortingMeasure.uml#_DIWNIPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Fzcho_AmEeSZVKM2bAqEPw" name="problemGenerator">
+        <modelElement href="sortingMeasure.uml#_DKx2EvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchpPAmEeSZVKM2bAqEPw" name="IProblemGenerator">
+          <modelElement href="sortingMeasure.uml#_DIXbQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FzchpfAmEeSZVKM2bAqEPw" name="numberOfStartElements">
+        <modelElement href="sortingMeasure.uml#_DKx2E_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchpvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Fzchp_AmEeSZVKM2bAqEPw" name="stepSize">
+        <modelElement href="sortingMeasure.uml#_DKx2FPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchqPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FzchqfAmEeSZVKM2bAqEPw" name="numberOfSteps">
+        <modelElement href="sortingMeasure.uml#_DKx2FfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchqvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Fzchq_AmEeSZVKM2bAqEPw" name="repetitions">
+        <modelElement href="sortingMeasure.uml#_DKx2FvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchrPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FzchrfAmEeSZVKM2bAqEPw" comments="_FzI_cPAmEeSZVKM2bAqEPw" targetConnectionVisual="_FzKNkPAmEeSZVKM2bAqEPw" name="profileAlgorithm">
+      <modelElement href="sortingMeasure.uml#_DKzEMfAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_FzchrvAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_Fzchr_AmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DKzrRfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchsPAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FzchsfAmEeSZVKM2bAqEPw" name="dataCallback">
+        <modelElement href="sortingMeasure.uml#_DKzrQPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchsvAmEeSZVKM2bAqEPw" name="IAlgorithmDataCallback">
+          <modelElement href="sortingMeasure.uml#_DIWNIPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Fzchs_AmEeSZVKM2bAqEPw" name="algos">
+        <modelElement href="sortingMeasure.uml#_DKzrQfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchtPAmEeSZVKM2bAqEPw" name="Map">
+          <modelElement href="sortingMeasure.uml#_DKb30PAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FzchtfAmEeSZVKM2bAqEPw" name="step">
+        <modelElement href="sortingMeasure.uml#_DKzrQvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchtvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Fzcht_AmEeSZVKM2bAqEPw" name="problems">
+        <modelElement href="sortingMeasure.uml#_DKzrQ_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchuPAmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FzchufAmEeSZVKM2bAqEPw" name="algorithm">
+        <modelElement href="sortingMeasure.uml#_DKzrRPAmEeSZVKM2bAqEPw"/>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Fzchu_AmEeSZVKM2bAqEPw" name="initAlgoData">
+      <modelElement href="sortingMeasure.uml#_DK05YvAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_FzchvPAmEeSZVKM2bAqEPw" name="Generics">
+        <modelElement href="sortingMeasure.uml#_DK1gcfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_FzchvfAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FzchvvAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DK2HgPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fzchv_AmEeSZVKM2bAqEPw" name="Map">
+          <modelElement href="sortingMeasure.uml#_DKb30PAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FzchwPAmEeSZVKM2bAqEPw" name="algorithms">
+        <modelElement href="sortingMeasure.uml#_DK1gcPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FzchwfAmEeSZVKM2bAqEPw" name="Set">
+          <modelElement href="sortingMeasure.uml#_DKhXYfAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FzchwvAmEeSZVKM2bAqEPw" comments="_FzNQ4PAmEeSZVKM2bAqEPw" targetConnectionVisual="_FzTXgPAmEeSZVKM2bAqEPw" name="getAlgorithms">
+      <modelElement href="sortingMeasure.uml#_DK3VofAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_Fzchw_AmEeSZVKM2bAqEPw" label="-"/>
+      <outParameters xmi:id="_FzchxPAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DK3Vo_AmEeSZVKM2bAqEPw"/>
+      </outParameters>
+      <parameters xmi:id="_FzchxvAmEeSZVKM2bAqEPw" name="algorithms">
+        <modelElement href="sortingMeasure.uml#_DK3VovAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_Fzchx_AmEeSZVKM2bAqEPw" name="Set">
+          <modelElement href="sortingMeasure.uml#_DKhXYfAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_FztAIPAmEeSZVKM2bAqEPw" name="OrderedProblemGenerator" generalizations="_Fzp80PAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DHAwYPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_FztAIfAmEeSZVKM2bAqEPw" position="25.0,1398.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FztAIvAmEeSZVKM2bAqEPw" label="+"/>
+    <attributes xmi:id="_FztAI_AmEeSZVKM2bAqEPw" name="order">
+      <modelElement href="sortingMeasure.uml#_DK81MPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_FztAJPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DK81MfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_FztAJfAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_FztAJvAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_FztAJ_AmEeSZVKM2bAqEPw" name="Order">
+        <modelElement href="sortingMeasure.uml#_DHHeEPAmEeSZVKM2bAqEPw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_FztAKPAmEeSZVKM2bAqEPw" name="createProblem">
+      <modelElement href="sortingMeasure.uml#_DHLIcPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_FztAKfAmEeSZVKM2bAqEPw" name="Array">
+        <modelElement href="sortingMeasure.uml#_DHR2IPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FztAKvAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DHSdMPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FztAK_AmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DHSdMfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_FztALPAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FztALfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DHRPEPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FztALvAmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FztAL_AmEeSZVKM2bAqEPw" name="size">
+        <modelElement href="sortingMeasure.uml#_DHLIcfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FztAMPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FztAMfAmEeSZVKM2bAqEPw" name="OrderedProblemGenerator">
+      <modelElement href="sortingMeasure.uml#_DKHHsPAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_FztAMvAmEeSZVKM2bAqEPw" keyword="create"/>
+      <visibility xmi:id="_FztAM_AmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FztANPAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DKHuwPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FztANfAmEeSZVKM2bAqEPw" name="OrderedProblemGenerator">
+          <modelElement href="sortingMeasure.uml#_DHAwYPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FztANvAmEeSZVKM2bAqEPw" name="order">
+        <modelElement href="sortingMeasure.uml#_DKHHsfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FztAN_AmEeSZVKM2bAqEPw" name="Order">
+          <modelElement href="sortingMeasure.uml#_DHHeEPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_F0xXIPAmEeSZVKM2bAqEPw" name="RandomProblemGenerator" associationsOut="_F0vh8PAmEeSZVKM2bAqEPw" generalizations="_F0o0QPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DHUSYPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_F0xXIfAmEeSZVKM2bAqEPw" position="556.0,1385.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_F0xXIvAmEeSZVKM2bAqEPw" label="+"/>
+    <attributes xmi:id="_F0xXI_AmEeSZVKM2bAqEPw" name="generator">
+      <modelElement href="sortingMeasure.uml#_DK9cQPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F0xXJPAmEeSZVKM2bAqEPw" name="Generics">
+        <modelElement href="sortingMeasure.uml#_DK-DUPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F0xXJfAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DK-qYPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F0xXJvAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_F0xXJ_AmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_F0xXKPAmEeSZVKM2bAqEPw" name="NumberGenerator">
+        <modelElement href="sortingMeasure.uml#_DKIV0PAmEeSZVKM2bAqEPw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_F0xXKfAmEeSZVKM2bAqEPw" name="createProblem">
+      <modelElement href="sortingMeasure.uml#_DHVggPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F0xXKvAmEeSZVKM2bAqEPw" name="Array">
+        <modelElement href="sortingMeasure.uml#_DHX8wPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F0xXK_AmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DHX8wfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F0xXLPAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DHYj0PAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F0xXLfAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F0xXLvAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DHVggvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F0xXL_AmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_F0xXMPAmEeSZVKM2bAqEPw" name="size">
+        <modelElement href="sortingMeasure.uml#_DHVggfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F0xXMfAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F0xXMvAmEeSZVKM2bAqEPw" name="RandomProblemGenerator">
+      <modelElement href="sortingMeasure.uml#_DKrIYPAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_F0xXM_AmEeSZVKM2bAqEPw" keyword="create"/>
+      <visibility xmi:id="_F0xXNPAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F0xXNfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DKrvcPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F0xXNvAmEeSZVKM2bAqEPw" name="RandomProblemGenerator">
+          <modelElement href="sortingMeasure.uml#_DHUSYPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_F0xXN_AmEeSZVKM2bAqEPw" name="generator">
+        <modelElement href="sortingMeasure.uml#_DKrIYfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F0xXOPAmEeSZVKM2bAqEPw" name="NumberGenerator">
+          <modelElement href="sortingMeasure.uml#_DKIV0PAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_F2w7MPAmEeSZVKM2bAqEPw" name="ISortData" subclassedBy="_F4v4MPAmEeSZVKM2bAqEPw _F55uwPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_F2w7MfAmEeSZVKM2bAqEPw" position="59.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_F2w7MvAmEeSZVKM2bAqEPw" label="+"/>
+    <operations xmi:id="_F2w7M_AmEeSZVKM2bAqEPw" abstractOperation="true" name="addComparison">
+      <modelElement href="sortingMeasure.uml#_DHqQoPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F2w7NPAmEeSZVKM2bAqEPw" label="+"/>
+    </operations>
+    <operations xmi:id="_F2w7NfAmEeSZVKM2bAqEPw" abstractOperation="true" name="addComparisons">
+      <modelElement href="sortingMeasure.uml#_DHq3sPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F2w7NvAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F2w7N_AmEeSZVKM2bAqEPw" name="comparisons">
+        <modelElement href="sortingMeasure.uml#_DHq3sfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F2w7OPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F2w7OfAmEeSZVKM2bAqEPw" abstractOperation="true" name="addShift">
+      <modelElement href="sortingMeasure.uml#_DHq3svAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F2w7OvAmEeSZVKM2bAqEPw" label="+"/>
+    </operations>
+    <operations xmi:id="_F2w7O_AmEeSZVKM2bAqEPw" abstractOperation="true" name="addShifts">
+      <modelElement href="sortingMeasure.uml#_DHq3s_AmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F2w7PPAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F2w7PfAmEeSZVKM2bAqEPw" name="shifts">
+        <modelElement href="sortingMeasure.uml#_DHrewPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F2w7PvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F2w7P_AmEeSZVKM2bAqEPw" abstractOperation="true" name="setTime">
+      <modelElement href="sortingMeasure.uml#_DHrewfAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F2w7QPAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F2w7QfAmEeSZVKM2bAqEPw" name="time">
+        <modelElement href="sortingMeasure.uml#_DHrewvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F2w7QvAmEeSZVKM2bAqEPw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F2w7Q_AmEeSZVKM2bAqEPw" abstractOperation="true" name="getComparisons">
+      <modelElement href="sortingMeasure.uml#_DHrew_AmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F2w7RPAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F2w7RfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DHuiEPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F2w7RvAmEeSZVKM2bAqEPw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_F2w7R_AmEeSZVKM2bAqEPw" abstractOperation="true" name="getShifts">
+      <modelElement href="sortingMeasure.uml#_DHvJIPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F2w7SPAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F2w7SfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DHvJIfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F2w7SvAmEeSZVKM2bAqEPw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_F2w7S_AmEeSZVKM2bAqEPw" abstractOperation="true" name="getTime">
+      <modelElement href="sortingMeasure.uml#_DHvJIvAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F2w7TPAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F2w7TfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DHvJI_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F2w7TvAmEeSZVKM2bAqEPw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_F5MkIPAmEeSZVKM2bAqEPw" name="SortData" generalizations="_F4v4MPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DH5hMPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_F5MkIfAmEeSZVKM2bAqEPw" position="19.0,350.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_F5MkIvAmEeSZVKM2bAqEPw" label="+"/>
+    <attributes xmi:id="_F5MkI_AmEeSZVKM2bAqEPw" defaultValue="0" name="comparisons">
+      <modelElement href="sortingMeasure.uml#_DLAfkPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5MkJPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DLAfkfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5MkJfAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_F5MkJvAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_F5MkJ_AmEeSZVKM2bAqEPw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_F5MkKPAmEeSZVKM2bAqEPw" defaultValue="0" name="shifts">
+      <modelElement href="sortingMeasure.uml#_DLBtsvAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5MkKfAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DLCUwPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5MkKvAmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_F5MkK_AmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_F5MkLPAmEeSZVKM2bAqEPw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_F5MkLfAmEeSZVKM2bAqEPw" defaultValue="0" name="time">
+      <modelElement href="sortingMeasure.uml#_DLC70vAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5MkLvAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DLC70_AmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5MkL_AmEeSZVKM2bAqEPw" label="+"/>
+      <cardinality xmi:id="_F5MkMPAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_F5MkMfAmEeSZVKM2bAqEPw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_F5MkMvAmEeSZVKM2bAqEPw" name="toString">
+      <modelElement href="sortingMeasure.uml#_DH5hMfAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5MkM_AmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DH6IQfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5MkNPAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DH6IQvAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5MkNfAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F5MkNvAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DH6IQPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5MkN_AmEeSZVKM2bAqEPw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_F5MkOPAmEeSZVKM2bAqEPw" name="addComparison">
+      <modelElement href="sortingMeasure.uml#_DH7WYPAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_F5MkOfAmEeSZVKM2bAqEPw" keyword="synchronized"/>
+      <stereotypes xmi:id="_F5MkOvAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DH79cPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5MkO_AmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DH79cfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5MkPPAmEeSZVKM2bAqEPw" label="+"/>
+    </operations>
+    <operations xmi:id="_F5MkPfAmEeSZVKM2bAqEPw" name="addComparisons">
+      <modelElement href="sortingMeasure.uml#_DH79c_AmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_F5MkPvAmEeSZVKM2bAqEPw" keyword="synchronized"/>
+      <stereotypes xmi:id="_F5MkP_AmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DH8kgfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5MkQPAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DH8kgvAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5MkQfAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F5MkQvAmEeSZVKM2bAqEPw" name="comparisons">
+        <modelElement href="sortingMeasure.uml#_DH79dPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5MkQ_AmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F5MkRPAmEeSZVKM2bAqEPw" name="addShift">
+      <modelElement href="sortingMeasure.uml#_DH8khPAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_F5MkRfAmEeSZVKM2bAqEPw" keyword="synchronized"/>
+      <stereotypes xmi:id="_F5MkRvAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DH9LkfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5MkR_AmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DH9LkvAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5MkSPAmEeSZVKM2bAqEPw" label="+"/>
+    </operations>
+    <operations xmi:id="_F5MkSfAmEeSZVKM2bAqEPw" name="addShifts">
+      <modelElement href="sortingMeasure.uml#_DIAO4PAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_F5MkSvAmEeSZVKM2bAqEPw" keyword="synchronized"/>
+      <stereotypes xmi:id="_F5MkS_AmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIA18PAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5MkTPAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DIA18fAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5MkTfAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F5MkTvAmEeSZVKM2bAqEPw" name="shifts">
+        <modelElement href="sortingMeasure.uml#_DIAO4fAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5MkT_AmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_F5_1YPAmEeSZVKM2bAqEPw" name="SortDataMock" generalizations="_F55uwPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DIDSMPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_F5_1YfAmEeSZVKM2bAqEPw" position="370.0,327.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_F5_1YvAmEeSZVKM2bAqEPw" label="+"/>
+    <operations xmi:id="_F5_1Y_AmEeSZVKM2bAqEPw" name="addComparison">
+      <modelElement href="sortingMeasure.uml#_DIDSMfAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5_1ZPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DID5QPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5_1ZfAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DID5QfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5_1ZvAmEeSZVKM2bAqEPw" label="+"/>
+    </operations>
+    <operations xmi:id="_F5_1Z_AmEeSZVKM2bAqEPw" name="addComparisons">
+      <modelElement href="sortingMeasure.uml#_DIEgUPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5_1aPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIEgUvAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5_1afAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DIFHYPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5_1avAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F5_1a_AmEeSZVKM2bAqEPw" name="comparisons">
+        <modelElement href="sortingMeasure.uml#_DIEgUfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5_1bPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F5_1bfAmEeSZVKM2bAqEPw" name="addShift">
+      <modelElement href="sortingMeasure.uml#_DIFHYvAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5_1bvAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIFHY_AmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5_1b_AmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DIFucPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5_1cPAmEeSZVKM2bAqEPw" label="+"/>
+    </operations>
+    <operations xmi:id="_F5_1cfAmEeSZVKM2bAqEPw" name="addShifts">
+      <modelElement href="sortingMeasure.uml#_DIFucvAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5_1cvAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIGVgPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5_1c_AmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DIGVgfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5_1dPAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F5_1dfAmEeSZVKM2bAqEPw" name="shifts">
+        <modelElement href="sortingMeasure.uml#_DIFuc_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5_1dvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F5_1d_AmEeSZVKM2bAqEPw" name="setTime">
+      <modelElement href="sortingMeasure.uml#_DIGVg_AmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5_1ePAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIG8kPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5_1efAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DIG8kfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5_1evAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F5_1e_AmEeSZVKM2bAqEPw" name="time">
+        <modelElement href="sortingMeasure.uml#_DIGVhPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5_1fPAmEeSZVKM2bAqEPw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F5_1ffAmEeSZVKM2bAqEPw" name="getComparisons">
+      <modelElement href="sortingMeasure.uml#_DIG8k_AmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5_1fvAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIHjofAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5_1f_AmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DIHjovAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5_1gPAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F5_1gfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIHjoPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5_1gvAmEeSZVKM2bAqEPw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_F5_1g_AmEeSZVKM2bAqEPw" name="getShifts">
+      <modelElement href="sortingMeasure.uml#_DIHjpPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5_1hPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIIKsfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5_1hfAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DIIKsvAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5_1hvAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F5_1h_AmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIIKsPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5_1iPAmEeSZVKM2bAqEPw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_F5_1ifAmEeSZVKM2bAqEPw" name="getTime">
+      <modelElement href="sortingMeasure.uml#_DIIKtPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F5_1ivAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIIxwfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F5_1i_AmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DIIxwvAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F5_1jPAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F5_1jfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIIxwPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F5_1jvAmEeSZVKM2bAqEPw" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_F69esPAmEeSZVKM2bAqEPw" name="SortUtil">
+    <modelElement href="sortingMeasure.uml#_DINqQPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_F69esfAmEeSZVKM2bAqEPw" position="470.0,1570.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_F69esvAmEeSZVKM2bAqEPw" label="+"/>
+    <operations xmi:id="_F69es_AmEeSZVKM2bAqEPw" name="SortUtil">
+      <modelElement href="sortingMeasure.uml#_DINqQfAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_F69etPAmEeSZVKM2bAqEPw" keyword="create"/>
+      <stereotypes xmi:id="_F69etfAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIR7sPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F69etvAmEeSZVKM2bAqEPw" label="-"/>
+      <outParameters xmi:id="_F69et_AmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIR7sfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F69euPAmEeSZVKM2bAqEPw" name="SortUtil">
+          <modelElement href="sortingMeasure.uml#_DINqQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_F69eufAmEeSZVKM2bAqEPw" name="swap" staticOperation="true">
+      <modelElement href="sortingMeasure.uml#_DIR7svAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F69euvAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F69eu_AmEeSZVKM2bAqEPw" name="array">
+        <modelElement href="sortingMeasure.uml#_DIR7s_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F69evPAmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_F69evfAmEeSZVKM2bAqEPw" name="first">
+        <modelElement href="sortingMeasure.uml#_DISiwPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F69evvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_F69ev_AmEeSZVKM2bAqEPw" name="secound">
+        <modelElement href="sortingMeasure.uml#_DISiwfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F69ewPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_F69ewfAmEeSZVKM2bAqEPw" name="swap" staticOperation="true">
+      <modelElement href="sortingMeasure.uml#_DKXmYPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F69ewvAmEeSZVKM2bAqEPw" label="+"/>
+      <parameters xmi:id="_F69ew_AmEeSZVKM2bAqEPw" name="array">
+        <modelElement href="sortingMeasure.uml#_DKXmYfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F69exPAmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_F69exfAmEeSZVKM2bAqEPw" name="first">
+        <modelElement href="sortingMeasure.uml#_DKXmYvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F69exvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_F69ex_AmEeSZVKM2bAqEPw" name="secound">
+        <modelElement href="sortingMeasure.uml#_DKYNcPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F69eyPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_F69eyfAmEeSZVKM2bAqEPw" name="sortData">
+        <modelElement href="sortingMeasure.uml#_DKYNcfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F69eyvAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_F9zXUPAmEeSZVKM2bAqEPw" name="BubbleSort" associationsOut="_F9LFMPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DHcOMPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_F9zXUfAmEeSZVKM2bAqEPw" position="674.0,994.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_F9zXUvAmEeSZVKM2bAqEPw" label="+"/>
+    <attributes xmi:id="_F9zXU_AmEeSZVKM2bAqEPw" defaultValue="LoggerFactory.getLogger(BubbleSort.class)" name="logger" staticAttribute="true">
+      <modelElement href="sortingMeasure.uml#_DK-qYfAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_F9zXVPAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_F9zXVfAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_F9zXVvAmEeSZVKM2bAqEPw" name="Logger">
+        <modelElement href="sortingMeasure.uml#_DKKyEPAmEeSZVKM2bAqEPw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_F9zXV_AmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure">
+      <modelElement href="sortingMeasure.uml#_DKMAMfAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_F9zXWPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DKMnQfAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_F9zXWfAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DKNOUPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_F9zXWvAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_F9zXW_AmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DKMnQPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F9zXXPAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_F9zXXfAmEeSZVKM2bAqEPw" name="array">
+        <modelElement href="sortingMeasure.uml#_DKMAMvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F9zXXvAmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_F9zXX_AmEeSZVKM2bAqEPw" name="sortData">
+        <modelElement href="sortingMeasure.uml#_DKMAM_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_F9zXYPAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_GAZYUPAmEeSZVKM2bAqEPw" comments="_F_CGYPAmEeSZVKM2bAqEPw" targetConnectionVisual="_F_VBUPAmEeSZVKM2bAqEPw" name="SimpleQuickSort" associationsOut="_F_xGMPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DHvwMPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_GAZYUfAmEeSZVKM2bAqEPw" position="12.0,1009.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_GAZYUvAmEeSZVKM2bAqEPw" label="+"/>
+    <attributes xmi:id="_GAZYU_AmEeSZVKM2bAqEPw" defaultValue="LoggerFactory.getLogger(SimpleQuickSort.class)" name="LOGGER" staticAttribute="true">
+      <modelElement href="sortingMeasure.uml#_DK_RcPAmEeSZVKM2bAqEPw"/>
+      <visibility xmi:id="_GAZYVPAmEeSZVKM2bAqEPw" label="-"/>
+      <cardinality xmi:id="_GAZYVfAmEeSZVKM2bAqEPw" label="1" max="1" min="1"/>
+      <type xmi:id="_GAZYVvAmEeSZVKM2bAqEPw" name="Logger">
+        <modelElement href="sortingMeasure.uml#_DKKyEPAmEeSZVKM2bAqEPw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_GAZYV_AmEeSZVKM2bAqEPw" name="qSort">
+      <modelElement href="sortingMeasure.uml#_DKQ4sPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_GAZYWPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DKRfwPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_GAZYWfAmEeSZVKM2bAqEPw" label="-"/>
+      <parameters xmi:id="_GAZYWvAmEeSZVKM2bAqEPw" name="x">
+        <modelElement href="sortingMeasure.uml#_DKQ4sfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYW_AmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GAZYXPAmEeSZVKM2bAqEPw" name="left">
+        <modelElement href="sortingMeasure.uml#_DKQ4svAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYXfAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GAZYXvAmEeSZVKM2bAqEPw" name="right">
+        <modelElement href="sortingMeasure.uml#_DKQ4s_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYX_AmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GAZYYPAmEeSZVKM2bAqEPw" name="sortData">
+        <modelElement href="sortingMeasure.uml#_DKQ4tPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYYfAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_GAZYYvAmEeSZVKM2bAqEPw" name="partition">
+      <modelElement href="sortingMeasure.uml#_DKSG0PAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_GAZYY_AmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DKSt4fAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_GAZYZPAmEeSZVKM2bAqEPw" label="-"/>
+      <outParameters xmi:id="_GAZYZfAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DKSt4PAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYZvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_GAZYZ_AmEeSZVKM2bAqEPw" name="x">
+        <modelElement href="sortingMeasure.uml#_DKSG0fAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYaPAmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GAZYafAmEeSZVKM2bAqEPw" name="left">
+        <modelElement href="sortingMeasure.uml#_DKSG0vAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYavAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GAZYa_AmEeSZVKM2bAqEPw" name="right">
+        <modelElement href="sortingMeasure.uml#_DKSG0_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYbPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GAZYbfAmEeSZVKM2bAqEPw" name="sortData">
+        <modelElement href="sortingMeasure.uml#_DKSG1PAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYbvAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_GAZYb_AmEeSZVKM2bAqEPw" name="sortWithComparisonAndShiftMeasure">
+      <modelElement href="sortingMeasure.uml#_DKTU8PAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_GAZYcPAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DKT8APAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_GAZYcfAmEeSZVKM2bAqEPw" name="Annotations">
+        <modelElement href="sortingMeasure.uml#_DKT8A_AmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_GAZYcvAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_GAZYc_AmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DKTU8_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYdPAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_GAZYdfAmEeSZVKM2bAqEPw" name="array">
+        <modelElement href="sortingMeasure.uml#_DKTU8fAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYdvAmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GAZYd_AmEeSZVKM2bAqEPw" name="sortData">
+        <modelElement href="sortingMeasure.uml#_DKTU8vAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_GAZYePAmEeSZVKM2bAqEPw" name="ISortData">
+          <modelElement href="sortingMeasure.uml#_DHmmQPAmEeSZVKM2bAqEPw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_FxHmMPAmEeSZVKM2bAqEPw" name="IProblemGenerator" subclassedBy="_Fzp80PAmEeSZVKM2bAqEPw _F0o0QPAmEeSZVKM2bAqEPw">
+    <modelElement href="sortingMeasure.uml#_DIXbQPAmEeSZVKM2bAqEPw"/>
+    <visualProperties xmi:id="_FxHmMfAmEeSZVKM2bAqEPw" position="20.0,1220.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_FxHmMvAmEeSZVKM2bAqEPw" label="+"/>
+    <operations xmi:id="_FxHmM_AmEeSZVKM2bAqEPw" name="createProblem">
+      <modelElement href="sortingMeasure.uml#_DIYCUPAmEeSZVKM2bAqEPw"/>
+      <stereotypes xmi:id="_FxHmNPAmEeSZVKM2bAqEPw" name="Array">
+        <modelElement href="sortingMeasure.uml#_DIYpYPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_FxHmNfAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FxHmNvAmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIYCUvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FxHmN_AmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FxHmOPAmEeSZVKM2bAqEPw" name="size">
+        <modelElement href="sortingMeasure.uml#_DIYCUfAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FxHmOfAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_FxHmOvAmEeSZVKM2bAqEPw" name="createProblems">
+      <modelElement href="sortingMeasure.uml#_DIYpYfAmEeSZVKM2bAqEPw"/>
+      <keywords xmi:id="_FxHmO_AmEeSZVKM2bAqEPw" keyword="defender"/>
+      <stereotypes xmi:id="_FxHmPPAmEeSZVKM2bAqEPw" name="Array">
+        <modelElement href="sortingMeasure.uml#_DIeI8PAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_FxHmPfAmEeSZVKM2bAqEPw" name="LegacyStyledElement">
+        <modelElement href="sortingMeasure.uml#_DIewAPAmEeSZVKM2bAqEPw"/>
+      </stereotypes>
+      <visibility xmi:id="_FxHmPvAmEeSZVKM2bAqEPw" label="+"/>
+      <outParameters xmi:id="_FxHmP_AmEeSZVKM2bAqEPw">
+        <modelElement href="sortingMeasure.uml#_DIZQcPAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FxHmQPAmEeSZVKM2bAqEPw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_FxHmQfAmEeSZVKM2bAqEPw" name="numberOfProblems">
+        <modelElement href="sortingMeasure.uml#_DIYpYvAmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FxHmQvAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_FxHmQ_AmEeSZVKM2bAqEPw" name="sizeOfTheProblems">
+        <modelElement href="sortingMeasure.uml#_DIYpY_AmEeSZVKM2bAqEPw"/>
+        <type xmi:id="_FxHmRPAmEeSZVKM2bAqEPw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
